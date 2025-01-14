@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOREX RACER RENKO SYSTEM</title>
+	<link rel="icon" href="../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+			background-image: url('../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 7; /* This maintains the aspect ratio */
+			background: url('product56.jpg') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+        .centered-title {
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../index.html">
+            <img src="../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>		
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../EBOOKS/index.html">EBOOKS</a>
+                    <a href="../../../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+					<a href="../../../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+					<a href="../../../MISCELLANEOUS/index.html">MISC TOOLS</a>
+					<a href="../../../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">FOREX RACER RENKO SYSTEM</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Overview of the ForexRacer</h3>
+                <p>The ForexRacer Manual details a trading system designed for the Forex market. It primarily utilizes Renko charts to identify trends and provides a comprehensive approach to trading, including installation, setup, trading strategies, and risk management. The manual emphasizes the importance of understanding market trends and avoiding common trading mistakes. It also covers the best times to trade, the significance of using stop-loss orders, and how to recognize sideways markets.</p>
+                
+                <h3>Entry Rules</h3>
+                <h4>Up Trend</h4>
+                <ol>
+                    <li><strong>FR-Trend Indicator:</strong> Shows uptrend color.</li>
+                    <li><strong>FR-Lines Indicator:</strong> Shows uptrend color.</li>
+                    <li><strong>FR-Signals Indicator:</strong> Shows uptrend color.</li>
+                    <li><strong>FR-Scanner Bricks:</strong> Show uptrend color (direction).</li>
+                    <li><strong>Entry Point:</strong> Enter the trade after a retracement or breakout line (1-2 pips above).</li>
+                </ol>
+                
+                <h4>Down Trend</h4>
+                <ol>
+                    <li><strong>FR-Trend Indicator:</strong> Shows downtrend color.</li>
+                    <li><strong>FR-Lines Indicator:</strong> Shows downtrend color.</li>
+                    <li><strong>FR-Signals Indicator:</strong> Shows downtrend color.</li>
+                    <li><strong>FR-Scanner Bricks:</strong> Show downtrend color (direction).</li>
+                    <li><strong>Entry Point:</strong> Enter the trade after a retracement or breakout line (2 pips below).</li>
+                </ol>
+                
+                <p><strong>General Rule:</strong> Always enter the trade 1-2 pips below/above the retracement or breakout line.</p>
+                
+                <h3>Exit Rules</h3>
+                <ol>
+                    <li><strong>FR-Trend Indicator:</strong> Changes color.</li>
+                    <li><strong>Brick (Candle):</strong> Changes color.</li>
+                </ol>
+                
+                <h3>Stop-Loss Rules</h3>
+                <ol>
+                    <li><strong>Always Use Stop-Loss:</strong> Never trade without a stop-loss.</li>
+                    <li><strong>Default Stop-Loss:</strong> Approximately 50 pips, then calculate more precisely based on specific circumstances.</li>
+                </ol>
+                
+                <h3>Little Tricks and Tips</h3>
+                <ul>
+                    <li><strong>Currency Correlation:</strong> 95% of the time, correlated currencies move in the same direction.</li>
+                    <li><strong>Session Trends:</strong> About 70% of the time, London and NY sessions change trend direction, requiring caution.</li>
+                    <li><strong>Time Sensitivity:</strong> Exit and entry points are not only dependent on indicator setups but also on timing.</li>
+                    <li><strong>Brick Size:</strong> For intraday trading, use a brick size of 10 (default). For positional trading, change brick size to 30.</li>
+                    <li><strong>Dual Charts:</strong> When trading EUR/USD or GBP/USD, keep two charts open and trade the pair with a clearer picture.</li>
+                </ul>
+                
+                <h3>Recognizing Market Conditions</h3>
+                <p><strong>Trending Market:</strong> Identified by trend lines acting as dynamic support or resistance.</p>
+                <p><strong>Sideways Market:</strong> Characterized by flat trend lines, frequent color changes in indicators, and closely spaced signals from FR-Signal and FR-ReversalPoints indicators.</p>
+                
+                <h3>Best Time to Trade</h3>
+                <ul>
+                    <li><strong>European Session:</strong> London Start: 08:00 GMT, London End: 16:00 GMT.</li>
+                    <li><strong>American Session:</strong> New York Start: 14:00 GMT, New York End: 21:00 GMT.</li>
+                    <li><strong>Avoid:</strong> Trading on Sunday Asian session due to false signals from a 2-day break.</li>
+                </ul>
+                
+                <h3>Common Trader Mistakes</h3>
+                <ul>
+                    <li>Not trusting the system or indicators.</li>
+                    <li>Entering trades too late or too early.</li>
+                    <li>Exiting trades too soon.</li>
+                    <li>Ignoring self-established rules.</li>
+                    <li>Changing rules during trades.</li>
+                    <li>Lacking patience.</li>
+                    <li>Overtrading.</li>
+                </ul>
+                
+                <h3>Conclusion</h3>
+                <p>The ForexRacer system is a structured and disciplined approach to Forex trading, focusing on trend recognition, timely entries and exits, and stringent risk management. By following the outlined rules and avoiding common pitfalls, traders can enhance their chances of success in the Forex market.</p>
+                
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1ta_QNEe-nKAOU8SGNwMdvY55kYsaNwoz/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

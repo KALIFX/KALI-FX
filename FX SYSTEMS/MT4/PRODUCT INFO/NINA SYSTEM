@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINA SYSTEM</title>
+	<link rel="icon" href="../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+			background-image: url('../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 7; /* This maintains the aspect ratio */
+			background: url('product63.jpg') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../index.html">
+            <img src="../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>	
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../EBOOKS/index.html">EBOOKS</a>
+                    <a href="../../../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+					<a href="../../../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+					<a href="../../../MISCELLANEOUS/index.html">MISC TOOLS</a>
+					<a href="../../../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">NINA SYSTEM</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Overview of the CatFX50 Trading System</h3>
+                <p>The CatFX50 trading system uses a combination of moving averages, stochastic indicators, and specific timeframes to identify buy and sell signals. Here’s a detailed breakdown:</p>
+
+                <h4>Main Tools and Indicators:</h4>
+                <ul>
+                    <li><strong>EMA50</strong>: Exponential Moving Average set to 50 periods.</li>
+                    <li><strong>EMA120</strong>: Exponential Moving Average set to 120 periods.</li>
+                    <li><strong>Hist_Step_MA_Stoch_KV1_Ex_03</strong>: Stochastic indicator set to 2000 bars with filters at +0.04 and -0.04.</li>
+                    <li><strong>aNina_v1</strong>: Set to 9000 bars, used to confirm signals with the Hist_Step_MA_Stoch indicator.</li>
+                    <li><strong>TSR Daily Range Calculator</strong>: Provides the daily range of the currency pair, essential for setting stop loss levels based on a 3:1 risk/reward ratio.</li>
+                </ul>
+
+                <h4>Optional Tools:</h4>
+                <ul>
+                    <li><strong>FX Sniper’s MA</strong>: For visual color coding of EMA50.</li>
+                    <li><strong>FiboPiv_v2</strong>: Fibonacci pivot points.</li>
+                    <li><strong>MAX Moving Average</strong>: Various settings (50, 14, 2000, 2).</li>
+                    <li><strong>Camarilladt7</strong>: Support and resistance levels (L3, L4, L5, H3, H4, H5).</li>
+                </ul>
+
+                <h4>Trading Timeframe and Session:</h4>
+                <ul>
+                    <li><strong>Timeframe</strong>: 30-minute charts.</li>
+                    <li><strong>Trading Hours</strong>: 08:00 CET to 18:00 CET.</li>
+                </ul>
+
+                <h4>Currency Pairs:</h4>
+                <ul>
+                    <li>EURUSD, USDCHF, GBPUSD</li>
+                </ul>
+
+                <h3>Buy and Sell Rules</h3>
+                <h4>Standard or Level 1 Signals:</h4>
+                <ul>
+                    <li><strong>Buy</strong>: When the price crosses above the EMA50 and a new bar opens above it. Hist_StepMA_Stoch must be green.</li>
+                    <li><strong>Sell</strong>: When the price crosses below the EMA50 and a new bar opens below it. Hist_StepMA_Stoch must be red.</li>
+                    <li><strong>Confirmation</strong>: Both Hist_StepMA_Stoch and aNina should give the same signal for a stronger trade.</li>
+                </ul>
+
+                <h4>Level 2 Signals (Riskier):</h4>
+                <ul>
+                    <li><strong>Buy</strong>: When the price is above EMA50 with Hist_StepMA_Stoch green, then opens a bar below EMA50 while Hist_StepMA_Stoch remains green. Buy when the price opens above EMA50 again, validated by Hist_StepMA_Stoch.</li>
+                    <li><strong>Sell</strong>: The reverse for sell signals.</li>
+                </ul>
+
+                <h4>Level 3 Signals (Riskier):</h4>
+                <ul>
+                    <li><strong>Buy</strong>: When the price is above EMA50 with Hist_StepMA_Stoch green, but then dips below or near EMA50 and Hist_StepMA_Stoch turns red. Buy when the price rises above EMA50 again and Hist_StepMA_Stoch turns green.</li>
+                    <li><strong>Sell</strong>: The reverse for sell signals.</li>
+                </ul>
+
+                <h4>Level 4 Signals (Take Care):</h4>
+                <ul>
+                    <li><strong>Buy/Sell</strong>: After a period of consolidation, a breakout through the last high/low occurs. The breakout should be validated by Hist_StepMA_Stoch (green for buy, red for sell). This signal is used with caution due to potential false breakouts.</li>
+                </ul>
+
+                <h3>Stop Loss and Money Management</h3>
+                <ul>
+                    <li><strong>Stop Loss</strong>: Determined by the TSR Daily Range Calculator, considering a risk/reward ratio (ideally 3:1). The stop loss should reflect the daily range and previous price action, avoiding fixed pip amounts like 34 pips.</li>
+                    <li><strong>Risk/Reward Ratio</strong>: Adjust the stop loss and expected profit according to the pair's daily range and trading conditions. Ensure the risk/reward ratio is realistic based on the current market environment.</li>
+                </ul>
+
+                <h3>Additional Considerations</h3>
+                <ul>
+                    <li><strong>Signal Risk</strong>: Be cautious with signals where the bar opens more than 20 pips above/below EMA50, as they are riskier.</li>
+                    <li><strong>Currency Pair Signals</strong>: Do not trade one currency pair based on the signal from another; each pair should generate its own signal.</li>
+                    <li><strong>Exit Strategy</strong>: The CatFX50 system lacks an exit strategy, so traders need to define their risk/reward ratios before entering a trade.</li>
+                </ul>
+
+                <h3>Final Advice</h3>
+                <p>The CatFX50 system is effective but not infallible. Use common sense, manage your risk carefully, and remember that no one can capture all potential pips. Daily recaps may show significant pips, but realistic expectations and prudent management are key to success.</p>
+
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1hMCrJGNpLLv-8KVVVoHqjkKDTZpfYX4h/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALI FX - BINARY HOLYGRAIL 2.0</title>
+	<link rel="icon" href="../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+			background-image: url('../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 8; /* This maintains the aspect ratio */
+			background: url('product20.png') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+        .centered-title {
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+<body>
+    <header>
+       <div class="logo">
+            <a href="../../../index.html">
+            <img src="../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>		
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../EBOOKS/index.html">EBOOKS</a>
+                    <a href="../../../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+					<a href="../../../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+					<a href="../../../MISCELLANEOUS/index.html">MISC TOOLS</a>
+					<a href="../../../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">BINARY HOLYGRAIL 2.0</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <p><strong>Summary:</strong></p>
+                <p>Trading Strategy Overview:</p>
+                <p><strong>Rule 1:</strong> Look for a yellow dot and listen for the alarm signal. Then, check the HolyChannel indicator.</p>
+                <p><strong>Rule 2: Best Conditions for Trading</strong></p>
+                <ul>
+                    <li>Aim for a 30-minute trade duration, proven to be most effective.</li>
+                    <li>Trade during the European and early US sessions, focusing on the EURUSD pair for reliable signals.</li>
+                    <li>If your broker doesn't offer a 30-minute trade option, choose the closest one, but avoid less than 25 minutes. Preferably, opt for 40 or 50 minutes, but anything from 25 to 60 minutes is acceptable.</li>
+                </ul>
+                <p><strong>Execution:</strong></p>
+                <ul>
+                    <li>Trade when there's a yellow dot and the price is in the red zone. Don't trade if these conditions aren't met.</li>
+                    <li>If both conditions are satisfied, wait for the current candle to close. Then, enter a trade for either a rise (CALL) or fall (PUT) in price, with a 30-minute duration, at the beginning of the next candle.</li>
+                    <li>In fast-moving markets, if a second yellow dot appears at the start of the entry candle and you're not already in a trade, wait for the current candle to close before entering at the new candle's onset.</li>
+                </ul>
+                <p><strong>Rule 3: Confirmation of Signals</strong></p>
+                <ul>
+                    <li>Always wait for the signal candle to close (one with the yellow dot and within the red zone). This ensures reliable signals, considering possible price shifts.</li>
+                </ul>
+                <p><strong>Strategy Summary:</strong></p>
+                <ul>
+                    <li>Stick to these simple rules. The effectiveness of a strategy often lies in its simplicity.</li>
+                    <li>Avoid complicating things with additional indicators or modifications. Trust in the system's effectiveness and maintain discipline for consistent success.</li>
+                </ul>
+                <p><strong>Upcoming Focus: Money Management</strong></p>
+                <p>Before diving into trade examples, let's discuss the essential aspect of money management, crucial for long-term trading success.</p>
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1LrJ8WRJMBEosfRsgMjRT_2ERXAeKBSGV/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

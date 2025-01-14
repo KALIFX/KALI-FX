@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOE ROSS TRADING SYSTEM</title>
+	<link rel="icon" href="../../../IMAGES/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-image: url('../../../IMAGES/header-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4em 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            height: 0px;
+        }
+
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        
+        /* Navigation Styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Main Content Styles */
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 8; /* This maintains the aspect ratio */
+			background: url('product74.png') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        /* Download Button Styles */
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../index.html">
+            <img src="../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>	
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../EBOOKS/index.html">EBOOKS</a>
+                    <a href="../../../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+                    <a href="../../../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+                    <a href="../../../MISCELLANEOUS/index.html">MISC TOOLS</a>
+                    <a href="../../../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">JOE ROSS TRADING SYSTEM</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <!-- Product Overview -->
+                <h3>Summary</h3>
+                <p>Joe Ross advocates for a trading approach that is simple and based on direct observation of price movements rather than relying heavily on indicators. His trading strategy includes:</p>
+                <ul>
+                    <li><strong>Risk Management:</strong> Emphasizes the importance of understanding personal risk tolerance and market risk, using the Average True Range (ATR) to set stops and objectives.</li>
+                    <li><strong>Entry Techniques:</strong> Utilizes the TTE and 1-2-3 formations to identify high-probability trade setups. The TTE involves entering a trade ahead of a breakout point, aiming to capture a quick profit.</li>
+                    <li><strong>Market Understanding:</strong> Focuses on understanding where orders are located in the market and using this information to anticipate price movements.</li>
+                    <li><strong>Scalping Strategy:</strong> Prefers short-term trades with set profit targets, entering and exiting positions quickly to minimize risk and maximize return.</li>
+                </ul>
+                
+                <!-- Buy and Sell Rules -->
+                <h3>Buy and Sell Rules</h3>
+                <h4>Buy Rules</h4>
+                <ol>
+                    <li><strong>1-2-3 Formation:</strong> The formation must occur at the end of a trend or a swing, not in a consolidation area. The 2 point should be evident before placing an entry order.</li>
+                    <li><strong>Traders Trick Entry (TTE):</strong>
+                        <ul>
+                            <li>Wait for at least the second bar of correction before considering a trade.</li>
+                            <li>Enter the trade one tick above the extreme of the correcting price bar.</li>
+                            <li>The momentum should be used to cover costs and earn profits.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Sell Rules</h4>
+                <ol>
+                    <li><strong>1-2-3 Formation:</strong> Similar to buy rules, the formation must be clear and occur at the end of a trend. The focus is on the downside movement from 1-2-3 highs.</li>
+                    <li><strong>TTE for Selling:</strong>
+                        <ul>
+                            <li>Follow the same principles as for buying, using the TTE for downside breakouts.</li>
+                            <li>Enter one tick below the extreme of the correcting bar.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>These strategies aim to capitalize on market momentum while minimizing risk through precise entry and exit points. Joe Ross stresses the importance of adapting to market conditions and using personal judgment to refine these rules.</p>
+
+                <!-- Download Button -->
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1RuYAU1xn5hkPlOIiYxByxLC98NDP4roq/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

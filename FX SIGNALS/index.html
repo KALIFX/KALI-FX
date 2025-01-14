@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Trading Signals</title>
+    
+    <!-- Prevent Caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <link rel="icon" href="../IMAGES/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Updated to Include Cache-Busting Query Parameters -->
+    <link rel="stylesheet" href="ASSETS/styles.css?v=1.0">
+    <link rel="stylesheet" href="ASSETS/mobile-styles.css?v=1.0">
+    
+    <audio id="beepSound" src="AUDIO/beep.mp3" preload="auto"></audio>
+</head>
+<body>
+<div class="overlay">
+    <button class="close-button" onclick="goBack()">X</button>
+    <h2>Coming Soon</h2>
+	</div>
+
+<header class="header">
+    <div class="header-left">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="IMAGES/logo.png" alt="Logo" />
+            </a>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-icon">
+            <div class="dropdown">
+                <img src="IMAGES/HELP.png" alt="Menu Icon" class="menu-icon">
+                <div class="dropdown-content">
+                    <a href="#option1">Signal Report</a>
+                    <a href="#option2">Risk management</a>
+                    <a href="#option3">PS calculator</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Active Trades Container -->
+<div class="container">
+    <h1>Forex Signals</h1>
+    <table id="signalsTable">
+        <tr>
+            <th>Currency Pair</th>
+            <th>Action</th>
+            <th>Entry Price</th>
+            <th>Stop-Loss</th>
+            <th>Take-Profit</th>
+            <th>Status</th>
+        </tr>
+        <!-- Data will be populated here -->
+    </table>
+    <div class="foot">Last updated: <span id="lastUpdated"></span> (<span id="relativeTime"></span>)</div>
+</div>
+
+<!-- Ticker Container -->
+<div class="ticker-container">
+    <div id="ticker" class="ticker-text">
+        <!-- Forex prices will be dynamically inserted here -->
+    </div>
+</div>
+
+<footer class="footer">
+    <p>Forex trading involves significant risk of loss and is not suitable for all investors. Before deciding to trade forex, you should carefully consider your investment objectives, level of experience, and risk appetite. You should be aware of all the risks associated with forex trading and seek advice from an independent financial advisor if you have any doubts.</p>
+    <div class="follow-us">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+    </div>
+</footer>
+
+<!-- Updated JavaScript to Include Cache-Busting Query Parameters -->
+<script src="ASSETS/script.js?v=1.0"></script>
+<script src="ASSETS/script2.js?v=1.0"></script>
+</body>
+</html>

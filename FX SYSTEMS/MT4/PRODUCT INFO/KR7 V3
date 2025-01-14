@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KR7 V3</title>
+	<link rel="icon" href="../../../IMAGES/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+         header {
+            background-image: url('../../../IMAGES/header-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4em 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            height: 0px;
+        }
+
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        
+        /* Navigation Styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Main Content Styles */
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 8; /* This maintains the aspect ratio */
+			background: url('product76.jpg') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+
+
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        /* Download Button Styles */
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../index.html">
+            <img src="../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>	
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../../../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../EBOOKS/index.html">EBOOKS</a>
+                    <a href="../../../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+                    <a href="../../../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+                    <a href="../../../MISCELLANEOUS/index.html">MISC TOOLS</a>
+                    <a href="../../../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2 class="centered-title">KR7 V3</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <!-- Product Overview -->
+                <h3>Overview</h3>
+                <ul>
+                    <li><strong>Indicators:</strong> The strategy uses four lines on the chart, with two colors: light green and red. The lines indicate stages of direction and magnitude.</li>
+                    <li><strong>Trend Detection:</strong> The number of green and red lines crossing helps determine the trend direction. A combination of indicators (Stochastic, RSI) is used for confirming signals.</li>
+                    <li><strong>Market Hours:</strong> The strategy is specifically tailored for the European market, operating from 9 AM to 6 PM Cairo Time.</li>
+                    <li><strong>Trade Targets:</strong> Targets are set between 10 to 30 pips.</li>
+                </ul>
+
+                <!-- Buy and Sell Rules -->
+                <h3>Buy and Sell Rules</h3>
+                <h4>Trend Analysis</h4>
+                <ul>
+                    <li><strong>Upward Trend:</strong>
+                        <ul>
+                            <li>If more green lines (e.g., 3 green lines and 1 red line) are crossed, it indicates an upward trend.</li>
+                            <li>Trade signals should be in the direction of the trend. Only take buy signals during an upward trend.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Downward Trend:</strong>
+                        <ul>
+                            <li>If more red lines (e.g., 3 red lines and 1 green line) are crossed, it indicates a downward trend.</li>
+                            <li>Trade signals should be in the direction of the trend. Only take sell signals during a downward trend.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Horizontal Trend:</strong>
+                        <ul>
+                            <li>If there’s a balance between green and red lines (e.g., 2 green lines and 2 red lines), the market is in a horizontal trend.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Signal Confirmation</h4>
+                <ul>
+                    <li><strong>Buy Signals:</strong>
+                        <ul>
+                            <li>Use Stochastic, RSI, and other indicators to confirm buy signals.</li>
+                            <li>A buy signal is valid only if it is confirmed by at least two different indicators.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sell Signals:</strong>
+                        <ul>
+                            <li>Similarly, sell signals should be confirmed by at least two different indicators.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Stop-Loss and Targets -->
+                <h3>Stop-Loss and Targets</h3>
+                <ul>
+                    <li><strong>Stop-Loss:</strong> Trigger a stop-loss signal when the direction changes from upward or downward to horizontal.</li>
+                    <li><strong>Target:</strong> Aim for a profit target between 10 to 30 pips.</li>
+                </ul>
+
+                <!-- Additional Notes -->
+                <h3>Additional Notes</h3>
+                <ul>
+                    <li>The strategy performs well with currencies and commodities but may show medium-level results with intra-pair cross trades.</li>
+                </ul>
+
+                <p>By following these rules, traders can potentially align their trades with the prevailing market trend and enhance their chances of success with the KR7 - V3 strategy.</p>
+
+                <!-- Download Button -->
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1XIiUtveXgWo-Z0O5RBaBkBIqts21gpIp/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

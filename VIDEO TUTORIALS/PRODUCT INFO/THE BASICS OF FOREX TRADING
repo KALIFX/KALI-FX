@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BASICS OF FOREX TRADING</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+			background-image: url('../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            background: url('product1.png') center center / cover no-repeat;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../index.html">
+            <img src="../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>	
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../EBOOKS/index.html">EBOOKS</a>
+                    <a href="../../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+					<a href="../../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+					<a href="../../MISCELLANEOUS/index.html">MISC TOOLS</a>
+					<a href="../../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">THE BASICS OF FOREX TRADING</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Overview</h3>
+                <p><strong>Title:</strong> The Basics of Forex Trading</p>
+                <p><strong>Format:</strong> Video Course</p>
+                <p><strong>Audience:</strong> Beginners interested in learning about forex trading</p>
+                <p><strong>Objective:</strong> To provide a foundational understanding of forex trading, including key concepts, terminology, and strategies.</p>
+                
+                <h3>Summary</h3>
+                <ol>
+                    <li><strong>Introduction to Forex Trading</strong>
+                        <ul>
+                            <li><strong>What is Forex Trading?</strong> Explains the concept of forex trading, the forex market, and its global significance.</li>
+                            <li><strong>History of Forex:</strong> A brief history of how forex trading evolved to its current state.</li>
+                            <li><strong>Market Participants:</strong> Overview of who trades in the forex market (banks, corporations, retail traders, etc.).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Basic Terminology</strong>
+                        <ul>
+                            <li><strong>Currency Pairs:</strong> Explanation of major, minor, and exotic currency pairs.</li>
+                            <li><strong>Pips, Lots, and Leverage:</strong> Definitions and examples of pips, lot sizes, and leverage.</li>
+                            <li><strong>Bid and Ask Prices:</strong> Understanding the concepts of bid and ask prices, and spreads.</li>
+                        </ul>
+                    </li>
+                    <li><strong>How Forex Trading Works</strong>
+                        <ul>
+                            <li><strong>Market Hours:</strong> Details on the 24-hour nature of the forex market and the different trading sessions (Tokyo, London, New York).</li>
+                            <li><strong>Types of Orders:</strong> Explanation of various order types such as market orders, limit orders, and stop-loss orders.</li>
+                            <li><strong>Reading a Forex Quote:</strong> How to read and interpret forex quotes.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fundamental Analysis</strong>
+                        <ul>
+                            <li><strong>Economic Indicators:</strong> Key economic indicators (GDP, employment rates, inflation) and their impact on currency prices.</li>
+                            <li><strong>Central Banks:</strong> Role of central banks and their monetary policies.</li>
+                            <li><strong>News and Events:</strong> How news and geopolitical events affect the forex market.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Technical Analysis</strong>
+                        <ul>
+                            <li><strong>Charts and Timeframes:</strong> Introduction to different types of charts (line, bar, candlestick) and timeframes.</li>
+                            <li><strong>Technical Indicators:</strong> Overview of popular technical indicators such as Moving Averages, RSI, MACD.</li>
+                            <li><strong>Trend Analysis:</strong> Identifying trends, trend lines, and chart patterns.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Trading Strategies</strong>
+                        <ul>
+                            <li><strong>Day Trading vs. Swing Trading:</strong> Differences between day trading and swing trading strategies.</li>
+                            <li><strong>Common Strategies:</strong> Examples of simple trading strategies based on technical and fundamental analysis.</li>
+                            <li><strong>Risk Management:</strong> Importance of risk management, setting stop-losses, and managing leverage.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Psychology of Trading</strong>
+                        <ul>
+                            <li><strong>Emotional Control:</strong> Managing emotions such as fear and greed.</li>
+                            <li><strong>Discipline and Patience:</strong> Importance of having a disciplined approach and being patient.</li>
+                            <li><strong>Trading Plan:</strong> Creating and sticking to a trading plan.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Getting Started</strong>
+                        <ul>
+                            <li><strong>Choosing a Broker:</strong> Criteria for selecting a forex broker.</li>
+                            <li><strong>Setting Up a Trading Account:</strong> Steps to open and set up a trading account.</li>
+                            <li><strong>Demo Trading:</strong> Importance of practicing with a demo account before trading with real money.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Conclusion</strong>
+                        <ul>
+                            <li><strong>Recap of Key Points:</strong> Summary of the main concepts covered in the course.</li>
+                            <li><strong>Next Steps:</strong> Suggestions for further learning and practice.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>This video course aims to equip beginners with the necessary knowledge and skills to start trading in the forex market confidently.</p>
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1mpNw_Ry-P4qUMpRweH7Sz7yR7MNFgZYh/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

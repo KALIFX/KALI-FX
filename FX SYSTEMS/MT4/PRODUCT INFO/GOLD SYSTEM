@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLD SYSTEM</title>
+	<link rel="icon" href="../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+			background-image: url('../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 7; /* This maintains the aspect ratio */
+			background: url('product62.jpg') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../index.html">
+            <img src="../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>		
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../EBOOKS/index.html">EBOOKS</a>
+                    <a href="../../../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+					<a href="../../../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+					<a href="../../../MISCELLANEOUS/index.html">MISC TOOLS</a>
+					<a href="../../../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">GOLD SYSTEM</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Overview</h3>
+                <ul>
+                    <li><strong>Timeframe:</strong> H1 (Hourly)</li>
+                    <li><strong>Currency Pairs:</strong> EURUSD, USDCHF, USDJPY, GBPUSD</li>
+                    <li><strong>Indicators Used:</strong>
+                        <ul>
+                            <li>Donchian Indicator</li>
+                            <li>Fibonacci Lines (referred to as "fib lines")</li>
+                            <li>PSAR (Parabolic SAR)</li>
+                            <li>9-Square Lines</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Buy and Sell Rules</h3>
+                <h4>Entry Rules</h4>
+                <ul>
+                    <li><strong>Buy:</strong> Enter a buy trade when the Donchian indicator crosses above the 2 Fibonacci lines.</li>
+                    <li><strong>Sell:</strong> Enter a sell trade when the Donchian indicator crosses below the 2 Fibonacci lines.</li>
+                </ul>
+
+                <h4>Stop Loss</h4>
+                <ul>
+                    <li>Place the stop loss at the latest swing high (for sell trades) or swing low (for buy trades).</li>
+                    <li>Use the PSAR to assist in determining the stop loss placement.</li>
+                </ul>
+
+                <h4>Take Profit</h4>
+                <ul>
+                    <li>The take profit should be based on the lines from the 9-Square indicator.</li>
+                    <li>Alternatively, trades can be managed by taking the trend from the beginning of the cross and reversing the position at the next cross.</li>
+                </ul>
+
+                <h4>Trade Management</h4>
+                <ul>
+                    <li>Positions are entered at every cross of the Donchian indicator with the Fibonacci lines.</li>
+                    <li>Do not open trades based on signals received on Friday night; wait until Monday to see how the market opens.</li>
+                </ul>
+
+                <h4>Performance Expectations</h4>
+                <ul>
+                    <li>The average pip gain per trade is 250 pips.</li>
+                    <li>Some trades can yield up to 800 pips.</li>
+                </ul>
+
+                <h4>Additional Advice</h4>
+                <ul>
+                    <li>Avoid opening trades late on Fridays to mitigate risks associated with market movements over the weekend.</li>
+                </ul>
+
+                <h3>Summary</h3>
+                <p>The strategy is designed to ensure continuous trading activity, with positions being opened and closed at each cross of the Donchian indicator with the Fibonacci lines. The use of PSAR helps in managing stop loss, while the 9-Square indicator guides take profit levels. The strategy emphasizes caution with end-of-week trades due to potential market volatility at the start of the next week.</p>
+
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1G7IrwZdcnA9BDl-l9E9yUJRR8HxOIP2R/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
