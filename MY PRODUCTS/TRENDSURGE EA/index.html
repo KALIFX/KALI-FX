@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRENDSURGE EXPERT ADVISOR</title>
+	<link rel="icon" href="../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+			<a href="../index.html">
+            <img src="../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>	
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../EBOOKS/index.html">EBOOKS</a>
+                    <a href="../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+					<a href="../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+					<a href="../MISCELLANEOUS TOOLS/index.html">MISC TOOLS</a>
+					<a href="../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>TRENDSURGE EXPERT ADVISOR</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="product0.1.png" alt="Product 0.1">
+                <p>TRENDSURGE EA by KALI-FX: Your strategic partner for capturing potential trend shifts. Every day, this powerful tool strategically sets pending orders at key points, targeting periods of high market volatility to maximize your trading opportunities. The Expert Advisor is designed to prioritize long-term growth, ensuring sustainable and steady returns over time.</p>
+                <p>The Expert Advisor executes orders at 12:00, which on average according to backtest results happens to be a peak time for market volatility, ensuring you capitalize on dynamic market movements. It then closes all trades by 18:00, securing your gains and minimizing overnight risks.</p>
+                 <p>
+                    Click on the following link for more info: 
+                    <a href="https://www.mql5.com/en/market/product/118853?source=Site+Market+My+Products+Page" target="_blank">mql5</a></p>
+                    </a>
+                </p>
+                <h3>Recommendations</h3>
+                <ul>
+                    <li>Test Before Live Trading: Ensure you test the EA with minimal risk on a demo account.</li>
+                    <li>Optimal Server Setup: Use a VPS or hosting server with minimal network latency to your broker's server.</li>
+                    <li>Choose the Right Broker: Look for low spreads, low commissions, and high-quality execution.</li>
+                    <li>Optimized Pair: Designed specifically for trading GBPUSD.</li>
+                    <li>Recommended Timeframe: H1 (Hourly).</li>
+                    <li>Minimum Deposit: $100 or more.</li>
+                </ul>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>Fully Automated: The EA handles all trading decisions.</li>
+                    <li>Risk Management: Built-in risk money management.</li>
+                    <li>Single Pair Focus: Trades exclusively on GBPUSD with a 1H timeframe.</li>
+                    <li>Protective Measures: Utilizes stop loss (SL).</li>
+                    <li>Positioning: Only opens long & short positions.</li>
+                    <li>No Grids or Martingale: Avoids complex and risky trading strategies.</li>
+                </ul>
+                
+                <p><a href="http://t.me/KARLIIIIII" target="_blank">Telegram Link</a></p>
+				<div class="image-gallery">
+					<a href="#" class="open-modal" data-img="1"><img src="IMAGES/TRENDSURGE/screenshot1.png" alt="Screenshot 1"></a>
+					<a href="#" class="open-modal" data-img="2"><img src="IMAGES/TRENDSURGE/screenshot2.png" alt="Screenshot 2"></a>
+					<a href="#" class="open-modal" data-img="3"><img src="IMAGES/TRENDSURGE/screenshot3.png" alt="Screenshot 3"></a>
+					<a href="#" class="open-modal" data-img="4"><img src="IMAGES/screenshot4.png" alt="Screenshot 4"></a>
+				</div>
+
+				<!-- Modal Lightbox -->
+				<div id="modal" class="modal">
+				<img id="modal-img" src="" alt="">
+				<a href="#" class="close">&times;</a>
+				</div>
+                
+                <!-- Green Download Button -->
+                <div class="download-button">
+                    <a href="https://www.mql5.com/en/market/product/118853?source=Site+Market+My+Products+Page" target="_blank">Download TRENDSURGE EA</a>
+                </div>
+            </div>
+        </div>
+    </main>
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+    const openModalButtons = document.querySelectorAll('.open-modal');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeModal = document.querySelector('.close');
+
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            const imgNumber = button.getAttribute('data-img');
+            const imgSrc = `IMAGES/TRENDSURGE/screenshot${imgNumber}.png`; // Modify this according to your file paths
+            modalImg.src = imgSrc;
+            modal.style.display = 'flex';
+        });
+    });
+
+    closeModal.addEventListener('click', function (event) {
+        event.preventDefault();  // Prevent the default behavior of the anchor tag
+        modal.style.display = 'none';
+    });
+
+    // Close modal if clicked outside the image
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+	</script>
+</body>
+
+</html>
