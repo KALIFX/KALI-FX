@@ -27,7 +27,7 @@
         },
         {
             "currency_pair": "GBP/USD",
-            "action": "Sell",
+            "action": "Buy",
             "entry_price": "pending",
             "stop_loss": "pending",
             "take_profit": "pending",
