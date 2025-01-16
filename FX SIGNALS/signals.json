@@ -1,0 +1,37 @@
+{
+    "lastUpdatedTime": "2024-08-28T12:00:10Z",
+    "signals": [
+        {
+            "currency_pair": "EUR/USD",
+            "action": "Sell",
+            "entry_price": "pending",
+            "stop_loss": "pending",
+            "take_profit": "pending",
+            "status": "Closed"
+        },
+        {
+            "currency_pair": "EUR/USD",
+            "action": "Buy",
+            "entry_price": "pending",
+            "stop_loss": "pending",
+            "take_profit": "pending",
+            "status": "Closed"
+        },
+        {
+            "currency_pair": "USD/JPY",
+            "action": "Sell",
+            "entry_price": "pending",
+            "stop_loss": "pending",
+            "take_profit": "pending",
+            "status": "Closed"
+        },
+        {
+            "currency_pair": "GBP/USD",
+            "action": "Sell",
+            "entry_price": "pending",
+            "stop_loss": "pending",
+            "take_profit": "pending",
+            "status": "Closed"
+        }
+    ]
+}
