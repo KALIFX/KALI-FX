@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAD TRAILER EXPERT ADVISOR</title>
+    <link rel="stylesheet" href="../css/styles.css">
+	<link rel="icon" href="../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+</head>
+<body>
+    <header>
+        <div class="logo">
+			<a href="../../index.html">
+            <img src="../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>	
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../EBOOKS/index.html">EBOOKS</a>
+                    <a href="../../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+					<a href="../../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+					<a href="../../MISCELLANEOUS/index.html">MISC TOOLS</a>
+					<a href="../../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>MAD TRAILER EXPERT ADVISOR</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="../product10.png" alt="Product 9">
+                <p>The AUTO BE Expert Advisor by KALIFX</p>
+                <p>
+                    The AUTO BE is an expert advisor (EA) for MT4, developed by KALIFX. This powerful tool automatically moves the stop-loss level to breakeven as the market price approaches your take-profit target, helping you lock in profits while protecting against potential reversals.
+                </p>
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Automatic Breakeven: Moves the stop-loss to breakeven as trades move towards take profit, ensuring profits are secured.</li>
+                    <li>Automatic Stop-Loss & Take-Profit: Automatically sets stop-loss (SL) and take-profit (TP) levels for each trade according to your preferences.</li>
+                    <li>User-Friendly: The AUTO BE EA is a simple yet effective tool for managing your stop-loss levels in MT4. However, it’s important to understand its limitations and consider alternatives before purchasing.</li>
+                </ul>
+                <h3>Input Parameters:</h3>
+                <ol>
+                    <li>Use Automatic SL & TP: Automatically sets SL and TP for each trade according to your preferences. Set to true to enable this feature.</li>
+                    <li>Use Breakeven: Enables the breakeven feature. When a trade reaches a specified profit level (in pips or distance towards take-profit), the stop-loss is moved to the breakeven point (trade's open price level). Set to true to enable this feature.</li>
+                    <li>BE % of Take-Profit: Specifies the percentage of TP at which the breakeven point is triggered or the stop-loss line is moved to the breakeven point.</li>
+                    <li>BE Offset in Pips: Specifies the number of pips above the open price level where the stop-loss will be moved to breakeven.</li>
+                </ol>
+                <p>Note: It is recommended to test the EA on a demo account to understand its functionality and optimize the settings to suit your trading strategy.</p>
+                <p>Want the .ex4 File?  Support our work with any donation amount.</p>
+				<p>Message me on Telegram to claim it!</p>
+				<p>Telegram link: <a href="http://t.me/KARLIIIIII" target="_blank">http://t.me/KARLIIIIII</a></p>
+				
+				<div class="image-gallery">
+					<a href="#" class="open-modal" data-img="1"><img src="../IMAGES/AUTO BE/Screenshot1.png" alt="Screenshot 1"></a>
+				</div>
+
+				<!-- Modal Lightbox -->
+				<div id="modal" class="modal">
+				<img id="modal-img" src="" alt="">
+				<a href="#" class="close">&times;</a>
+				</div>
+								
+                
+                <!-- Download Button -->
+                <div class="download-button">
+                    <a href="https://www.mql5.com/en/market/product/114495?source=Site+Market+My+Products+Page" target="_blank">Download Mad Trailer EA</a>
+                </div>
+            </div>
+        </div>
+    </main>
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+    const openModalButtons = document.querySelectorAll('.open-modal');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeModal = document.querySelector('.close');
+
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            const imgNumber = button.getAttribute('data-img');
+            const imgSrc = `../IMAGES/AUTO BE/screenshot${imgNumber}.png`; // Modify this according to your file paths
+            modalImg.src = imgSrc;
+            modal.style.display = 'flex';
+        });
+    });
+
+    closeModal.addEventListener('click', function (event) {
+        event.preventDefault();  // Prevent the default behavior of the anchor tag
+        modal.style.display = 'none';
+    });
+
+    // Close modal if clicked outside the image
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+	</script>
+  
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALI FX</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Your existing CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+         header {
+			background-image: url('../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-align: left;
+			padding: 4em 0;
+			position: relative;
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			justify-content: flex-start; /* Align items to the left */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+
+		
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        main {
+            padding: 2em;
+            text-align: center;
+        }
+        .search-container {
+            margin-bottom: 2em;
+        }
+        .search-container input {
+            padding: 0.5em;
+            font-size: 1em;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+        .product p {
+            font-size: 1em;
+            margin: 0.5em 0;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 1em;
+            color: white;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .download-button:hover {
+            background-color: #e64a4a;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333; /* Dark background */
+            color: white; /* White text color */
+        }
+        footer a {
+            text-decoration: none;
+            color: white; /* White link color */
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: #00acee; /* Light blue hover color */
+        }
+        .fab {
+            margin-right: 5px;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../">
+            <img src="../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>
+		
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../EBOOKS/">EBOOKS</a>
+                    <a href="../MT4/">MT4 SYSTEMS</a>
+					<a href="#">MT5 SYSTEMS</a>
+					<a href="../../MISCELLANEOUS/">MISC TOOLS</a>
+					<a href="../../VIDEO TUTORIALS/">VIDEO TUTORIALS</a>
+					<a href="../../FX SIGNALS/">FX SIGNALS</a>
+					<a href="../../POSITION SIZE CALCULATOR/">PS CALCULATOR</a>
+                </div>    
+            </li>         
+        </ul>
+    </nav>
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search for products...">
+        </div>
+        <div class="product-grid" id="productGrid">
+            <div class="product" data-product-id="1">
+                <a href="PRODUCT INFO/THE HALF TREND SYSTEM/">
+                    <img src="product1.png" alt="THE HALF TREND SYSTEM">
+                </a>
+                <h3>THE HALF TREND SYSTEM</h3>
+                <a href="https://drive.google.com/file/d/13_FF6Scm0SKD8_krZGOi50WyR_W2n_Y9/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+            <div class="product" data-product-id="2">
+                <a href="PRODUCT INFO/HARVEST TRADING SYSTEM/">
+                    <img src="product2.png" alt="HARVEST TRADING SYSTEM">
+                </a>
+                <h3>HARVEST TRADING SYSTEM</h3>
+                <a href="https://drive.google.com/file/d/1pJ7D5kcgST7FxfU9_Pa_KXkIea_qdMeq/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+			 <div class="product" data-product-id="3">
+                <a href="PRODUCT INFO/PIVOTS POINTS/">
+                    <img src="product3.png" alt="PIVOTS POINTS">
+                </a>
+                <h3>PIVOTS POINTS</h3>
+                <a href="https://drive.google.com/file/d/13N8xQAqE-5pdLzJEtCd1mSxow67ydTm5/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+            <div class="product" data-product-id="4">
+                <a href="PRODUCT INFO/PLT WINNER SYSTEM/">
+                    <img src="product4.png" alt="PLT WINNER STRATEGY">
+                </a>
+                <h3>PLT WINNER STRATEGY</h3>
+                <a href="https://drive.google.com/file/d/1jVgesx_WWytpZKbSh5DURKkiGD_wBwRS/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+			 <div class="product" data-product-id="5">
+                <a href="PRODUCT INFO/THE MOMENTUM SCALPING SYSTEM/">
+                    <img src="product5.png" alt="THE MOMENTUM SCALPING SYSTEM">
+                </a>
+                <h3>THE MOMENTUM SCALPING SYSTEM</h3>
+                <a href="https://drive.google.com/file/d/1WtPJcvikuh3zclI4FG1J15LK6exHk5DO/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+            <div class="product" data-product-id="6">
+                <a href="PRODUCT INFO/200 PIPS A WEEK SYSTEM/">
+                    <img src="product6.jpg" alt="200 PIPS A WEEK SYSTEM">
+                </a>
+                <h3>200 PIPS A WEEK SYSTEM</h3>
+                <a href="https://drive.google.com/file/d/1uWbqy352TUqKJjEjt-WUYFOt_CH708Zo/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+			<div class="product" data-product-id="7">
+                <a href="PRODUCT INFO/NO.1 FOREX SYSTEM/">
+                    <img src="product7.jpg" alt="NO.1 FOREX SYSTEM">
+                </a>
+                <h3>NO.1 FOREX SYSTEM</h3>
+                <a href="https://drive.google.com/file/d/1tC7OdnVvjVIMbSDTARYk_ZwYjNQSmhBj/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+            <div class="product" data-product-id="8">
+                <a href="PRODUCT INFO/SUPER SYSTEM/">
+                    <img src="product8.png" alt="SUPER SYSTEM">
+                </a>
+                <h3>SUPER SYSTEM</h3>
+                <a href="https://drive.google.com/file/d/1-xZ8u6r0CVCB7phjhNnPOFpoElNZjFvz/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+			 <div class="product" data-product-id="9">
+                <a href="PRODUCT INFO/STOCHASTIC SCALPING/">
+                    <img src="product9.png" alt="STOCHASTIC SCALPING">
+                </a>
+                <h3>STOCHASTIC SCALPING</h3>
+                <a href="https://drive.google.com/file/d/1ERNidN9mYPYBexUyxWyrpN_LsNAiGnd6/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+           
+        </div>
+    </main>
+   <footer>
+    <p>
+        <a href="../../Disclaimer/">Disclaimer</a> | 
+        <a href="../../Terms/">Terms</a> | 
+        <a href="https://t.me/yourtelegramlink" target="_blank">
+            <i class="fab fa-telegram-plane"></i> Telegram
+        </a> | 
+        <a href="../../BUY ME COFFEE/index.html">Support Us</a>
+    </p>
+	</footer>
+    <script>
+        function searchProducts() {
+            let input = document.getElementById('searchInput');
+            let filter = input.value.toLowerCase();
+            let productGrid = document.getElementById('productGrid');
+            let products = productGrid.getElementsByClassName('product');
+
+            for (let i = 0; i < products.length; i++) {
+                let product = products[i];
+                let title = product.getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (title.indexOf(filter) > -1) {
+                    product.style.display = '';
+                } else {
+                    product.style.display = 'none';
+                }
+            }
+        }
+           </script>
+</body>
+</html>
+

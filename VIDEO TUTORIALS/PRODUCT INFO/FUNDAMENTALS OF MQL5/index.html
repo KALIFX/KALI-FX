@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FUNDAMENTALS OF MQL5</title>
+    <link rel="stylesheet" href="../css/styles.css">
+	<link rel="icon" href="../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+			background-image: url('../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            background: url('../product1.png') center center / cover no-repeat;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../">
+            <img src="../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>		
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../EBOOKS/">EBOOKS</a>
+                    <a href="../../../FX SYSTEMS/MT4/">MT4 SYSTEMS</a>
+					<a href="../../../FX SYSTEMS/MT5/">MT5 SYSTEMS</a>
+					<a href="../../../MISCELLANEOUS/">MISC TOOLS</a>
+					<a href="../../../VIDEO TUTORIALS/">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">THE FUNDAMENTALS OF MQL5</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Overview and Summary: Fundamentals of MQL5 Video Course</h3>
+                <p><strong>Course Objective:</strong> The Fundamentals of MQL5 video course aims to provide a comprehensive introduction to MetaQuotes Language 5 (MQL5), the programming language used to develop trading robots, technical indicators, scripts, and libraries for the MetaTrader 5 trading platform.</p>
+                
+                <h3>What to Expect:</h3>
+                <ol>
+                    <li><strong>Introduction to MQL5:</strong>
+                        <ul>
+                            <li>Overview of MQL5 and its role in the MetaTrader 5 ecosystem.</li>
+                            <li>Understanding the structure of MQL5 programs.</li>
+                            <li>Differences between MQL5 and MQL4.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Development Environment:</strong>
+                        <ul>
+                            <li>Setting up MetaTrader 5 for MQL5 development.</li>
+                            <li>Navigating the MetaEditor.</li>
+                            <li>Compiling and debugging MQL5 code.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Basic Programming Concepts:</strong>
+                        <ul>
+                            <li>Variables, data types, and operators.</li>
+                            <li>Control structures: loops and conditionals.</li>
+                            <li>Functions and event handlers.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Creating Custom Indicators:</strong>
+                        <ul>
+                            <li>Basics of indicator development.</li>
+                            <li>Plotting custom indicators on charts.</li>
+                            <li>Using built-in functions for technical analysis.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Developing Trading Robots (Expert Advisors):</strong>
+                        <ul>
+                            <li>Structure of an Expert Advisor (EA).</li>
+                            <li>Implementing trading logic.</li>
+                            <li>Order placement and management.</li>
+                            <li>Testing and optimization of EAs.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Working with Scripts:</strong>
+                        <ul>
+                            <li>Purpose and use cases for scripts.</li>
+                            <li>Writing simple scripts for various tasks.</li>
+                            <li>Executing scripts in MetaTrader 5.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Advanced MQL5 Features:</strong>
+                        <ul>
+                            <li>Working with objects and graphical elements.</li>
+                            <li>Custom classes and libraries.</li>
+                            <li>Interfacing with external data sources.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Practical Applications:</strong>
+                        <ul>
+                            <li>Real-world examples of custom indicators and EAs.</li>
+                            <li>Case studies and sample projects.</li>
+                            <li>Best practices for MQL5 development.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Resources and Further Learning:</strong>
+                        <ul>
+                            <li>Access to documentation and online resources.</li>
+                            <li>Community forums and support.</li>
+                            <li>Continuing education and advanced topics.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Benefits of the Course:</h3>
+                <ul>
+                    <li><strong>Hands-on Experience:</strong> Practical examples and exercises to apply what you've learned.</li>
+                    <li><strong>Comprehensive Coverage:</strong> From basics to advanced features, ensuring a solid foundation in MQL5.</li>
+                    <li><strong>Expert Guidance:</strong> Learn from experienced developers with real-world experience in MQL5.</li>
+                    <li><strong>Community and Support:</strong> Access to forums and additional resources to help you continue your learning journey.</li>
+                </ul>
+                <p>This video course is ideal for traders, developers, and anyone interested in automating trading strategies and creating custom technical indicators using MQL5. Whether you're a beginner or have some programming experience, this course will equip you with the skills needed to succeed in MQL5 development.</p>
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/183fkiP3av_UhSS4TY-V5nKrHPyMsHDBF/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

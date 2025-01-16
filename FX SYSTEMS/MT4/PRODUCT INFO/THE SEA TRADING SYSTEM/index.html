@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEA TRADING SYSTEM</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="../../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+			background-image: url('../../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 7; /* This maintains the aspect ratio */
+			background: url('../product61.jpg') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+
+
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../../">
+            <img src="../../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>		
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../../"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../../EBOOKS/">EBOOKS</a>
+                    <a href="../../../../FX SYSTEMS/MT4/">MT4 SYSTEMS</a>
+					<a href="../../../../FX SYSTEMS/MT5/">MT5 SYSTEMS</a>
+					<a href="../../../../MISCELLANEOUS/">MISC TOOLS</a>
+					<a href="../../../../VIDEO TUTORIALS/">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">SEA TRADING SYSTEM</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Overview of The Sea Trading System</h3>
+                <p>The Sea Trading System, developed by Russ Horn, is a versatile Forex trading strategy designed for use across various timeframes and currency pairs, especially major pairs like EUR/USD and GBP/USD. The system is named for its reliance on indicators that trigger signals when they fall below or rise above their middle levels, resembling a sea level.</p>
+
+                <h3>System Components & Indicators</h3>
+                <ul>
+                    <li><strong>Bollinger Bands (20,3)</strong></li>
+                    <li><strong>3-period Exponential Moving Average (EMA)</strong></li>
+                    <li><strong>MACD (6,17,1)</strong></li>
+                    <li><strong>14-period Relative Strength Index (RSI)</strong></li>
+                </ul>
+
+                <h3>Chart Setup</h3>
+                <ul>
+                    <li><strong>Bollinger Bands (20,3):</strong> Apply with a 20-period, 3 standard deviations, on the closing prices.</li>
+                    <li><strong>3-period EMA:</strong> Apply with a 3-period on the closing prices.</li>
+                    <li><strong>MACD (6,17,1):</strong> Set with a Fast EMA of 6, Slow EMA of 17, and MACD SMA of 1.</li>
+                    <li><strong>14-period RSI:</strong> Apply with a period of 14 and a level set at 50.</li>
+                </ul>
+
+                <h3>Buy Rules</h3>
+                <ul>
+                    <li>3-period EMA crosses above the Middle Bollinger Band.</li>
+                    <li>MACD crosses above the 0 level.</li>
+                    <li>14-period RSI crosses above the 50 level.</li>
+                    <li>Place a buy order when all conditions are met.</li>
+                    <li><strong>Stop Loss:</strong> A few pips below the nearest swing low or the Lower Bollinger Band, whichever is closer.</li>
+                    <li><strong>Take Profit:</strong> At the Upper Bollinger Band or a fixed target, depending on the timeframe:
+                        <ul>
+                            <li><strong>M1:</strong> 3-5 pips</li>
+                            <li><strong>M5:</strong> 5-10 pips</li>
+                            <li><strong>M15:</strong> 15-20 pips</li>
+                            <li><strong>M30:</strong> 25-30 pips</li>
+                            <li><strong>H1:</strong> 40-60 pips</li>
+                            <li><strong>H4:</strong> 80-100 pips</li>
+                            <li><strong>D1:</strong> 150-200 pips</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Sell Rules</h3>
+                <ul>
+                    <li>3-period EMA crosses below the Middle Bollinger Band.</li>
+                    <li>MACD falls below the 0 level.</li>
+                    <li>14-period RSI moves below the 50 level.</li>
+                    <li>Place a sell order when all conditions are met.</li>
+                    <li><strong>Stop Loss:</strong> A few pips above the nearest swing high or the Upper Bollinger Band, whichever is closer.</li>
+                    <li><strong>Take Profit:</strong> At the Lower Bollinger Band or a fixed target, depending on the timeframe.</li>
+                </ul>
+
+                <h3>Example Trades</h3>
+                <h4>Long Trade Example</h4>
+                <ul>
+                    <li><strong>Chart:</strong> GBP/JPY H4</li>
+                    <li><strong>Entry:</strong> When RSI crossed above 50, MACD above 0, and 3 EMA above Middle Bollinger Band.</li>
+                    <li><strong>Buy Order:</strong> At 126.283</li>
+                    <li><strong>Stop Loss:</strong> 80 pips below the entry, at 125.483</li>
+                    <li><strong>Take Profit:</strong> 100 pips, at 127.283</li>
+                </ul>
+
+                <h4>Short Trade Example</h4>
+                <ul>
+                    <li><strong>Chart:</strong> EUR/USD H1</li>
+                    <li><strong>Entry:</strong> When RSI crossed below 50, 3 EMA below Middle Bollinger Band, and MACD below 0.</li>
+                    <li><strong>Sell Order:</strong> At 1.30512</li>
+                    <li><strong>Stop Loss:</strong> 15 pips above the entry, at 1.30662</li>
+                    <li><strong>Take Profit:</strong> 40 pips, at 1.30112</li>
+                </ul>
+
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1z4WIx7YWtxxzJQ-xrMM2IvYsKOI4H-wU/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
