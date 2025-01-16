@@ -284,7 +284,7 @@ footer a:hover {
     border-radius: 5px; /* Rounded corners */
     font-size: 14px;
     color: #666; /* Neutral disclaimer text color */
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Align text to the left */
     line-height: 1.6; /* Improved line spacing */
 }
 
