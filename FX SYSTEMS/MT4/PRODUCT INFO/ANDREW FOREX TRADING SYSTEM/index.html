@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANDREW FOREX TRADING SYSTEM</title>
+	<link rel="icon" href="../../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+			background-image: url('../../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 8; /* This maintains the aspect ratio */
+			background: url('../product13.png') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+        .centered-title {
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../../">
+            <img src="../../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>		
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../../"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../../EBOOKS/">EBOOKS</a>
+                    <a href="../../../../FX SYSTEMS/MT4/">MT4 SYSTEMS</a>
+					<a href="../../../../FX SYSTEMS/MT5/">MT5 SYSTEMS</a>
+					<a href="../../../../MISCELLANEOUS/">MISC TOOLS</a>
+					<a href="../../../../VIDEO TUTORIALS/">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">ANDREW TRADING SYSTEM</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <p><strong>ANDREW TRADING SYSTEM</strong></p>
+                <div class="trading-guide">
+                    <p><strong>Currency Pair:</strong><br>
+                    Any pair, with a preference for cross-pairs that exhibit strong trends.</p>
+
+                    <p><strong>Time Frame:</strong><br>
+                    Any, typically a 4-hour chart.</p>
+
+                    <p><strong>Indicators:</strong><br>
+                    Supertrend, Nonlagdot (Value: 20)</p>
+
+                    <hr>
+
+                    <h3>Entry Rules</h3>
+
+                    <h4>Buy Entry:</h4>
+                    <ul>
+                        <li><strong>Indicator Signals:</strong>
+                            <ul>
+                                <li>Nonlagdot changes from red to blue.</li>
+                                <li>Nonlagdot dots should be above the Supertrend line.</li>
+                                <li>Supertrend line should be green.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Order Execution:</strong>
+                            <ul>
+                                <li>Open a position with a pending order.</li>
+                                <li>Place the order at the upper point of the market extremum formed after the first downward rebound (closing price lower than the previous one).</li>
+                                <li>Wait for the price to exceed this extremum point before buying.</li>
+                                <li>If the price does not exceed the extremum point, wait and shift the order to the new extremum.</li>
+                                <li>Cancel the order if Nonlagdot or Supertrend turns red.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>Sell Entry:</h4>
+                    <ul>
+                        <li><strong>Indicator Signals:</strong>
+                            <ul>
+                                <li>Nonlagdot changes from blue to red.</li>
+                                <li>Nonlagdot dots should be below the Supertrend line.</li>
+                                <li>Supertrend line should be red.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Order Execution:</strong>
+                            <ul>
+                                <li>Open a position with a pending order.</li>
+                                <li>Place the order at the lower point of the market extremum formed after the first upward rebound (closing price higher than the previous one).</li>
+                                <li>Wait for the price to exceed this extremum point before selling.</li>
+                                <li>If the price does not exceed the extremum point, wait and shift the order to the new extremum.</li>
+                                <li>Cancel the order if Nonlagdot or Supertrend turns blue.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p><strong>Important Note:</strong><br>
+                    Avoid market entries without placing pending orders. Pending orders should account for the spread and include an additional 3 pips.</p>
+
+                    <hr>
+
+                    <h3>Exit Rules</h3>
+
+                    <p><strong>Exit the Position When:</strong></p>
+                    <ul>
+                        <li>The price touches the Supertrend line.</li>
+                        <li>The Supertrend line changes color.</li>
+                        <li>The price touches the first line of the Fibonacci fan.</li>
+                    </ul>
+
+                    <p><strong>Fibonacci Fan Construction:</strong><br>
+                    Draw from the market extremum at the beginning of the movement to the opposite extreme point. For buys: from the bottom to the top of the movement. For sells: from the top to the bottom of the movement. Exit at the line of the Fibonacci fan closest to the price, moving the exit order along this line.</p>
+
+                    <hr>
+
+                    <h3>Stop-Loss Settings</h3>
+
+                    <p><strong>Stop-Loss Placement:</strong></p>
+                    <ul>
+                        <li>On the Supertrend line.</li>
+                        <li>Below the nearest price swing.</li>
+                        <li>Under (or over) the closest market extremum that exceeds the Supertrend line in the opposite direction.</li>
+                    </ul>
+
+                    <p><strong>Additional Note:</strong><br>
+                    Account for the spread and add 3 pips to the stop-loss order.</p>
+
+                    <hr>
+
+                    <h3>Money Management</h3>
+
+                    <p><strong>Recommended Strategies:</strong></p>
+                    <ul>
+                        <li>Limit risk to no more than 10% of capital per trade.</li>
+                        <li>Consider using a progressive system (e.g., Fibonacci or semi-martingale).</li>
+                        <li>Avoid the Martingale strategy due to high risk after consecutive losses.</li>
+                    </ul>
+
+                    <p><strong>Adding Positions:</strong><br>
+                    Only add to profitable positions after a regular color change of Nonlagdot in the direction of the current trend.</p>
+
+                    <hr>
+
+                    <p>This trading strategy combines key indicators and sound money management principles to optimize your trading performance. Follow these rules to identify and capitalize on market trends while effectively managing risk.</p>
+                </div>
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1uEn8woaQhz-ksp5ArU54mMVv976eJ71j/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

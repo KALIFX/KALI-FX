@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGORITHMIC TRADING IN MQL5</title>
+    <link rel="stylesheet" href="../css/styles.css">
+	<link rel="icon" href="../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+			background-image: url('../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            background: url('../product1.png') center center / cover no-repeat;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+			<a href="../../../">
+            <img src="../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>	
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../EBOOKS/">EBOOKS</a>
+                    <a href="../../../FX SYSTEMS/MT4/">MT4 SYSTEMS</a>
+					<a href="../../../FX SYSTEMS/MT5/">MT5 SYSTEMS</a>
+					<a href="../../../MISCELLANEOUS/">MISC TOOLS</a>
+					<a href="../../../VIDEO TUTORIALS/">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">ALGORITHMIC TRADING IN MQL5</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Overview and Summary: Algorithmic Trading in MQL5 - OOP and PO Video Course</h3>
+                <p><strong>Course Objective:</strong> The Algorithmic Trading in MQL5 - Object-Oriented Programming (OOP) and Patterns of Organization (PO) video course is designed to deepen your understanding of MQL5 by leveraging advanced programming techniques. The course focuses on using OOP and various organizational patterns to create efficient, scalable, and maintainable trading systems in MetaTrader 5.</p>
+                
+                <h3>What to Expect:</h3>
+                <ol>
+                    <li><strong>Introduction to Advanced MQL5 Programming:</strong>
+                        <ul>
+                            <li>Overview of advanced MQL5 features.</li>
+                            <li>Importance of OOP and PO in algorithmic trading.</li>
+                            <li>Benefits of using structured programming techniques.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Object-Oriented Programming (OOP) Fundamentals:</strong>
+                        <ul>
+                            <li>Basic concepts of OOP: classes, objects, inheritance, polymorphism, encapsulation, and abstraction.</li>
+                            <li>Creating and using classes in MQL5.</li>
+                            <li>Implementing inheritance and polymorphism in trading systems.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Patterns of Organization (PO):</strong>
+                        <ul>
+                            <li>Overview of common design patterns: Singleton, Factory, Strategy, Observer, and more.</li>
+                            <li>Implementing design patterns in MQL5 for trading systems.</li>
+                            <li>Case studies demonstrating the use of design patterns in real-world scenarios.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Developing Complex Trading Systems:</strong>
+                        <ul>
+                            <li>Structuring large-scale trading systems using OOP and PO.</li>
+                            <li>Creating reusable and modular code.</li>
+                            <li>Best practices for managing code complexity and enhancing readability.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Custom Indicators and EAs with OOP:</strong>
+                        <ul>
+                            <li>Developing custom indicators using object-oriented techniques.</li>
+                            <li>Building Expert Advisors with advanced trading logic.</li>
+                            <li>Utilizing design patterns to improve EA performance and maintainability.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Testing and Optimization:</strong>
+                        <ul>
+                            <li>Strategies for testing and optimizing complex trading systems.</li>
+                            <li>Using the MetaTrader 5 strategy tester for backtesting and forward testing.</li>
+                            <li>Techniques for optimizing code performance.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Error Handling and Debugging:</strong>
+                        <ul>
+                            <li>Implementing robust error handling mechanisms.</li>
+                            <li>Debugging advanced MQL5 programs.</li>
+                            <li>Common pitfalls and how to avoid them.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Practical Applications and Projects:</strong>
+                        <ul>
+                            <li>Real-world examples of OOP and PO in algorithmic trading.</li>
+                            <li>Step-by-step development of a complex trading system.</li>
+                            <li>Hands-on projects to reinforce learning.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Resources and Further Learning:</strong>
+                        <ul>
+                            <li>Access to MQL5 documentation and online resources.</li>
+                            <li>Community forums and support networks.</li>
+                            <li>Recommendations for continuing education and advanced topics.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Benefits of the Course:</h3>
+                <ul>
+                    <li><strong>Deep Understanding:</strong> Gain a thorough understanding of OOP and PO principles applied to MQL5.</li>
+                    <li><strong>Hands-on Learning:</strong> Practical examples and projects to solidify your knowledge.</li>
+                    <li><strong>Efficiency and Scalability:</strong> Learn to write code that is efficient, scalable, and maintainable.</li>
+                    <li><strong>Expert Instruction:</strong> Benefit from the experience of seasoned developers with expertise in algorithmic trading.</li>
+                    <li><strong>Community and Resources:</strong> Access to additional learning materials and support from the MQL5 community.</li>
+                </ul>
+                <p>This video course is ideal for traders and developers who already have a basic understanding of MQL5 and want to enhance their skills by applying advanced programming techniques. Whether you are developing custom indicators, trading robots, or complex trading systems, this course will provide you with the tools and knowledge to succeed.</p>
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1LK36TZRTt1p11KHgdO-fNmuIPJN6TtKC/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+

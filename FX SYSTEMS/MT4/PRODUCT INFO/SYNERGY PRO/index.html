@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNERGY PRO</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="../../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+			background-image: url('../../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 7; /* This maintains the aspect ratio */
+			background: url('../product60.jpg') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+
+
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../../">
+            <img src="../../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>			
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../../"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../../EBOOKS/">EBOOKS</a>
+                    <a href="../../../../FX SYSTEMS/MT4/">MT4 SYSTEMS</a>
+					<a href="../../../../FX SYSTEMS/MT5/">MT5 SYSTEMS</a>
+					<a href="../../../../MISCELLANEOUS/">MISC TOOLS</a>
+					<a href="../../../../VIDEO TUTORIALS/">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">SYNERGY PRO SYSTEM</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Overview</h3>
+                <p>Synergy Pro is a comprehensive trading system designed to integrate multiple aspects of market dynamics, including price action, market sentiment, trend, and momentum. It is engineered to cater to different trading styles, from scalping to long-term position trading, making it versatile and adaptable to individual trader preferences.</p>
+
+                <h3>Components and Indicators</h3>
+                <ul>
+                    <li><strong>Average Price Bars (APB):</strong> These bars provide a clearer view of price movements and trends compared to traditional candlestick charts.</li>
+                    <li><strong>Average Price Bar Arrows (APBA):</strong> These arrows signal potential trade opportunities based on APB analysis.</li>
+                    <li><strong>Active Support and Resistance (ASR):</strong> Identifies significant support and resistance levels where price reversals or breakouts might occur.</li>
+                    <li><strong>Dynamic Support and Resistance (DSR):</strong> Provides real-time updates on support and resistance levels as market conditions change.</li>
+                    <li><strong>Multiple Time Frame (MTF):</strong> Analyzes trends across different time frames to enhance trade decisions.</li>
+                    <li><strong>Price Trend (PT):</strong> Monitors the overall direction of price movements to identify trend directions.</li>
+                    <li><strong>Traders Dynamic Index (TDI):</strong> Combines multiple indicators to provide comprehensive market sentiment analysis.</li>
+                    <li><strong>Volatility (VOL):</strong> Measures market volatility to identify potential entry and exit points.</li>
+                </ul>
+
+                <h3>Trade Styles and Objectives</h3>
+                <p>Synergy Pro supports various trading styles:</p>
+                <ul>
+                    <li><strong>Scalper:</strong> Trades on 1-5 minute charts, seeking 3-8 pips per trade.</li>
+                    <li><strong>Active - Aggressive:</strong> Trades on 5-15 minute charts, seeking 5-15 pips per trade.</li>
+                    <li><strong>Active - Conservative:</strong> Trades on 15-30 minute charts, seeking 20-40 pips per trade.</li>
+                    <li><strong>Swing:</strong> Trades on 1-4 hour charts, seeking 40-100 pips per trade.</li>
+                    <li><strong>Position:</strong> Trades on 4-hour to daily charts, seeking 100+ pips per trade.</li>
+                </ul>
+
+                <h3>Buy and Sell Rules</h3>
+                <h4>Synergy Basic Entry Rules</h4>
+                <ul>
+                    <li><strong>Long Entry:</strong>
+                        <ul>
+                            <li>APB is greater than the PAC.</li>
+                            <li>PAC is flat or trending up.</li>
+                            <li>TDI RSI Price (Green) line is rising above the 50 level.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Synergy Pro Trader Alert (SPTA)</h4>
+                <ul>
+                    <li><strong>Trade Entry:</strong>
+                        <ul>
+                            <li>An “All conditions =” alert appears, signaling a long or short entry.</li>
+                            <li>Details include the time chart, buy or sell condition, price, and local time stamp.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Trade Management:</strong>
+                        <ul>
+                            <li>Specific trade levels are displayed, including Initial Stop Loss (ISL), Potential Target 1 (PT1), and Potential Target 2 (PT2).</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>TDI Hook Alerts</h4>
+                <ul>
+                    <li><strong>Buy Signal:</strong>
+                        <ul>
+                            <li>When the TDI Green line hooks up from below the 32 level, it indicates a potential oversold condition.</li>
+                            <li>Consider entering a long position if the Market Base Line is trending up at the time of the alert.</li>
+                            <li>Set a stop loss just below the previous low of the TDI Hook Up.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sell Signal:</strong>
+                        <ul>
+                            <li>When the TDI Green line hooks down from above the 68 level, it indicates a potential overbought condition.</li>
+                            <li>Consider entering a short position if the Market Base Line is trending down at the time of the alert.</li>
+                            <li>Set a stop loss just above the previous high of the TDI Hook Down.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1h4WH8QTmK-vY5yCMdA52TgcGS9LxwlnD/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

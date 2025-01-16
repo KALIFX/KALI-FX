@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLADE TRADING SYSTEM</title>
+	<link rel="icon" href="../../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+			background-image: url('../../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 8; /* This maintains the aspect ratio */
+			background: url('../product17.jpg') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+        .centered-title {
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="logo">
+            <a href="../../../../">
+            <img src="../../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>		
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../../"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../../EBOOKS/">EBOOKS</a>
+                    <a href="../../../../FX SYSTEMS/MT4/">MT4 SYSTEMS</a>
+					<a href="../../../../FX SYSTEMS/MT5/">MT5 SYSTEMS</a>
+					<a href="../../../../MISCELLANEOUS/">MISC TOOLS</a>
+					<a href="../../../../VIDEO TUTORIALS/">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">BLADE TRADING SYSTEM</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Trading Rules for Currency Pairs</h3>
+                <p><strong>Currency Pairs</strong>: AUD/USD, EUR/USD, GBP/USD, USD/JPY<br>
+                <strong>Timeframe</strong>: H1</p>
+
+                <h4>Initial Setup</h4>
+                <ol>
+                    <li><strong>Configure Blade Level Indicator</strong>:
+                        <ul>
+                            <li>Determine your time zone difference from GMT (Greenwich Mean Time). Use <a href="http://wwp.greenwichmeantime.com/">this tool</a>.</li>
+                            <li>Set the <code>GMT_OffsetLocal</code> indicator to reflect your time zone difference (e.g., if your time zone is GMT -3, set <code>GMT_OffsetLocal</code> to -3).</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Buy Signal Procedure</h4>
+                <ol>
+                    <li><strong>Blade Level Indicator</strong>:
+                        <ul>
+                            <li>Wait for the Blade Level Indicator to draw a new line on the chart.</li>
+                            <li>Wait for one hour until the next bar closes.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Signal Indicators</strong>:
+                        <ul>
+                            <li>Check the Moving Average (orange line) and the Trend Oscillator.</li>
+                            <li>For a Buy signal:
+                                <ul>
+                                    <li>Moving Average must close above the Blade Level Indicator line.</li>
+                                    <li>Trend Oscillator should be blue.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Market Entry</strong>:
+                        <ul>
+                            <li>If both conditions are met, enter the market.</li>
+                            <li>For EUR/USD, set TakeProfit to 60 pips and StopLoss to 70 pips.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Exit Strategy</strong>:
+                        <ul>
+                            <li>Exit the trade if the Trend Oscillator closes below 0, regardless of profit.</li>
+                            <li>Ignore the current Blade Level line after exiting with profit and wait for a new line.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Buy Signal After a Loss</h4>
+                <ol>
+                    <li><strong>Re-Entry Conditions</strong>:
+                        <ul>
+                            <li>Follow the initial Buy Signal Procedure.</li>
+                            <li>Exit with a loss if the Trend Oscillator closes below 0.</li>
+                            <li>Wait for a new Buy signal.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Increased Lot Size</strong>:
+                        <ul>
+                            <li>Re-enter the market when Moving Average closes above the line and Trend Oscillator is blue.</li>
+                            <li>Increase lot size by 1.6 times for EUR/USD.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Important Notes</strong>:
+                        <ul>
+                            <li>Do not enter if Moving Average closes above the line but the Trend Oscillator is red.</li>
+                            <li>Testing showed that trades typically closed in profit within three orders; however, increase the lot size up to five times if necessary. After five attempts, revert to the original lot size.</li>
+                            <li>All orders are placed near the same Blade Level line. Ignore the current line after a profitable trade and wait for a new line.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Sell Signal Procedure</h4>
+                <ol>
+                    <li><strong>Blade Level Indicator</strong>:
+                        <ul>
+                            <li>Wait for the Blade Level Indicator to draw a new line on the chart.</li>
+                            <li>Wait for one hour until the next bar closes.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Signal Indicators</strong>:
+                        <ul>
+                            <li>Check the Moving Average (orange line) and the Trend Oscillator.</li>
+                            <li>For a Sell signal:
+                                <ul>
+                                    <li>Moving Average must close below the Blade Level Indicator line.</li>
+                                    <li>Trend Oscillator should be red.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Market Entry</strong>:
+                        <ul>
+                            <li>If both conditions are met, enter the market.</li>
+                            <li>For EUR/USD, set TakeProfit to 60 pips and StopLoss to 70 pips.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Exit Strategy</strong>:
+                        <ul>
+                            <li>Exit the trade if the Trend Oscillator closes above 0, regardless of profit.</li>
+                            <li>Ignore the current Blade Level line after exiting with profit and wait for a new line.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Sell Signal After a Loss</h4>
+                <ol>
+                    <li><strong>Re-Entry Conditions</strong>:
+                        <ul>
+                            <li>Follow the initial Sell Signal Procedure.</li>
+                            <li>Exit with a loss if the Trend Oscillator closes above 0.</li>
+                            <li>Wait for a new Sell signal.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Increased Lot Size</strong>:
+                        <ul>
+                            <li>Re-enter the market when Moving Average closes below the line and Trend Oscillator is red.</li>
+                            <li>Increase lot size by 1.6 times for EUR/USD.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Important Notes</strong>:
+                        <ul>
+                            <li>Do not enter if Moving Average closes below the line but the Trend Oscillator is blue.</li>
+                            <li>Testing showed that trades typically closed in profit within three orders; however, increase the lot size up to five times if necessary. After five attempts, revert to the original lot size.</li>
+                            <li>All orders are placed near the same Blade Level line. Ignore the current line after a profitable trade and wait for a new line.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1qbjJaihR3k5N289plLGGOOrKRMxz_tlf/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
