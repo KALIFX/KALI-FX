@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALI FX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../../IMAGES/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('../../IMAGES/header-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4em 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            height: 0px;
+        }
+        
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        main {
+            padding: 2em;
+            text-align: center;
+        }
+        .search-container {
+            margin-bottom: 2em;
+        }
+        .search-container input {
+            padding: 0.5em;
+            font-size: 1em;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2em;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+        .product p {
+            font-size: 1em;
+            margin: 0.5em 0;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 1em;
+            color: white;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .download-button:hover {
+            background-color: #e64a4a;
+        }
+
+        .pagination {
+            margin: 2em 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        .pagination li {
+            margin: 0 0.5em;
+        }
+        .pagination a {
+            color: #333;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .pagination a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333; /* Dark background */
+            color: white; /* White text color */
+        }
+        footer a {
+            text-decoration: none;
+            color: white; /* White link color */
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: #00acee; /* Light blue hover color */
+        }
+        .fab {
+            margin-right: 5px;
+        }
+
+        .tracker-info {
+            margin-top: 10px;
+        }
+
+        /* Mobile devices */
+        @media (max-width: 480px) {
+            header {
+                padding: 1em 0;
+            }
+
+            .logo img {
+                max-width: 40%;
+                max-height: 40%;
+            }
+           
+            nav {
+                padding: 0;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            nav ul li {
+                margin: 0 0.5em;
+            }
+
+            nav ul li a {
+                padding: 0.8em;
+                font-size: 0.9em;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../index.html">
+            <img src="../../IMAGES/logo.png" alt="Logo" />
+            </a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../index.html">EBOOKS</a>
+                    <a href="../../FX SYSTEMS/MT4/index.html">MT4 SYSTEMS</a>
+                    <a href="../../FX SYSTEMS/MT5/index.html">MT5 SYSTEMS</a>
+                    <a href="../../MISCELLANEOUS/index.html">MISC TOOLS</a>
+                    <a href="../../VIDEO TUTORIALS/index.html">VIDEO TUTORIALS</a>
+                    <a href="../../FX SIGNALS/index.html">FX SIGNALS</a>
+                    <a href="../../POSITION SIZE CALCULATOR/index.html">PS CALCULATOR</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search for products...">
+        </div>
+        <div class="product-grid" id="productGrid">
+			<div class="product" data-product-id="1">
+                <img src="product1.png" alt="6 SIMPLE STRATEGIES FOR TRADING FOREX">
+                <a href="https://drive.google.com/file/d/1dnc_d94QZkiCml2kb5j7gpa9PXnxqhfC/view?usp=drive_link" class="download-button" onclick="trackDownload(1)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="2">
+                <img src="product2.png" alt="CANDLESTICKS,FIBONACCI AND CHART PATTERN TRADING TOOLS ">
+                <a href="https://drive.google.com/file/d/1MkFQo1o5XnCYTm2VMC_i2sSZZWozTlst/view?usp=drive_link" class="download-button" onclick="trackDownload(2)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="3">
+                <img src="product3.png" alt="CURRENCY TRADING IN THE FOREX AND FUTURES MARKETS ">
+                <a href="https://drive.google.com/file/d/1tfdUGOjqMtNO0aqekFzS_ivDyTTCl4Gm/view?usp=drive_link" class="download-button" onclick="trackDownload(3)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="4">
+                <img src="product4.png" alt="FOREX PATTERNS AND PROBABILITIES">
+                <a href="https://drive.google.com/file/d/1IhHAqRGWoYCldjjojzUXt3a6z5VpPgDi/view?usp=drive_link" class="download-button" onclick="trackDownload(4)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="5">
+                <img src="product5.png" alt="ENHANCING TRADER PERFOMANCE">
+                <a href="https://drive.google.com/file/d/1rAA93yOSF_DYawjIjAcZB-Up4-edV-U-/view?usp=drive_link" class="download-button" onclick="trackDownload(5)">Download</a>
+                
+            </div>
+			<div class="product" data-product-id="6">
+                <img src="product6.png" alt="FOREX CONQUERED">
+                <a href="https://drive.google.com/file/d/1B65Dl57iw4xZE24TSgTy5iPL7gh4N0ys/view?usp=drive_link" class="download-button" onclick="trackDownload(1)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="7">
+                <img src="product7.png" alt="FOREX ESSENTIALS IN 15 TRADES ">
+                <a href="https://drive.google.com/file/d/1svdphwlSvJWpkMF6bTdalAKr0jd54gGw/view?usp=drive_link" class="download-button" onclick="trackDownload(2)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="8">
+                <img src="product8.png" alt="FOREX TRADING USING INTERMARKET ANALYSIS ">
+                <a href="https://drive.google.com/file/d/1l7UIHN08Vqq94Kgnq66_TZRXlCrCTn6C/view?usp=drive_link" class="download-button" onclick="trackDownload(3)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="9">
+                <img src="product9.png" alt="FOREX TRADING">
+                <a href="https://drive.google.com/file/d/15jBdMkq_Twe_4hRekSvK-_PBQ9F5xOcL/view?usp=drive_link" class="download-button" onclick="trackDownload(4)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="10">
+                <img src="product10.png" alt="HIT AND RUN TRADING">
+                <a href="https://drive.google.com/file/d/1936mZUYummwJnSgxr5U9gpC0t5Y5-WYf/view?usp=drive_link" class="download-button" onclick="trackDownload(5)">Download</a>
+                
+            </div>
+			<div class="product" data-product-id="11">
+                <img src="product11.png" alt="HOW TO DAY TRADE FOR A LIVING">
+                <a href="https://drive.google.com/file/d/1W76rWu5QPDgfVbds3K_ViaOvejsqyUsF/view?usp=drive_link" class="download-button" onclick="trackDownload(1)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="12">
+                <img src="product12.png" alt="FOREX LEGACY BY VANCE WILLIAMS">
+                <a href="https://drive.google.com/file/d/1cJi_rep-esucejAwj2JeP-CtvxAWdY_U/view?usp=drive_link" class="download-button" onclick="trackDownload(2)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="13">
+                <img src="product13.png" alt="READING PRICE CHARTS BAR BY BAR ">
+                <a href="https://drive.google.com/file/d/1egqApAaB_E8EK99Pj5RIQf1GIiZCBmQf/view?usp=drive_link" class="download-button" onclick="trackDownload(3)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="14">
+                <img src="product14.png" alt="RSI PRO FOREX TRADING SYSTEM">
+                <a href="https://drive.google.com/file/d/17VP5p4ZyKHB3g0cfTJEK9oR3R73c51ms/view?usp=drive_link" class="download-button" onclick="trackDownload(4)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="15">
+                <img src="product15.png" alt="SELECTIVE FOREX TRADING">
+                <a href="https://drive.google.com/file/d/1lBKkjXGCaI-1_bJ5XuWVzau-krVXD0Uk/view?usp=drive_link" class="download-button" onclick="trackDownload(5)">Download</a>
+                
+            </div>
+			<div class="product" data-product-id="16">
+                <img src="product16.png" alt="SNIPER TRADING WORKBOOK">
+                <a href="https://drive.google.com/file/d/1bx1-IIAxVek3s9JJLurRkitfPMB8z9ub/view?usp=drive_link" class="download-button" onclick="trackDownload(1)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="17">
+                <img src="product17.png" alt="STOCK MARKET STRATEGIES THAT WORK">
+                <a href="https://drive.google.com/file/d/1eGjGnN9H47gtPq1DQ_mCIAvN8MAV5yTX/view?usp=drive_link" class="download-button" onclick="trackDownload(2)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="18">
+                <img src="product18.png" alt="THE PSYCHOLOGY OF TRADING ">
+                <a href="https://drive.google.com/file/d/1VrcYSVcUYyCx3-_239EoO6J1POa_qM0t/view?usp=drive_link" class="download-button" onclick="trackDownload(3)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="19">
+                <img src="product19.png" alt="THE TRADERS PENDULUM">
+                <a href="https://drive.google.com/file/d/1-U-K5aIf9wLXD1bQfZGnPRQHV6K4P_tf/view?usp=drive_link" class="download-button" onclick="trackDownload(4)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="20">
+                <img src="product20.png" alt="TRADE LIKE A PRO WITHOUT GIVING UP YOUR DAY JOB">
+                <a href="https://drive.google.com/file/d/11LeHQ2IiFZyY-fSy7Qtvd753f6EqqpMc/view?usp=drive_link" class="download-button" onclick="trackDownload(5)">Download</a>
+                
+            </div>
+			 <div class="product" data-product-id="21">
+                <img src="product21.png" alt="TRADE WITH PASSION AND PURPOSE">
+                <a href="https://drive.google.com/file/d/103wnLyfmUUoTN73YQnG6A63nH0F_buD2/view?usp=drive_link" class="download-button" onclick="trackDownload(5)">Download</a>
+                
+            </div>
+			<div class="product" data-product-id="22">
+                <img src="product22.png" alt="TRADING AGAINST THE CROWD">
+                <a href="https://drive.google.com/file/d/1Y594eMAbSt7hOOFRG25QDxpBBPaZ_U9B/view?usp=drive_link" class="download-button" onclick="trackDownload(1)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="23">
+                <img src="product23.png" alt="TRADING IN THE ZONE">
+                <a href="https://drive.google.com/file/d/1vnthxx0cx1958HNPjvTXYHhYV7JobMic/view?usp=drive_link" class="download-button" onclick="trackDownload(2)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="24">
+                <img src="product24.png" alt="TRADING PRICE ACTION REVERSALS ">
+                <a href="https://drive.google.com/file/d/173PfBrub8tblBZ9qGB1SVI4TvWp9lyhA/view?usp=drive_link" class="download-button" onclick="trackDownload(3)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="25">
+                <img src="product25.png" alt="TRADING PRICE ACTION TRADING RANGES">
+                <a href="https://drive.google.com/file/d/1G4Qml23EHxbYFg1_K85V2yTylrU2gfCn/view?usp=drive_link" class="download-button" onclick="trackDownload(4)">Download</a>
+                
+            </div>
+            <div class="product" data-product-id="26">
+                <img src="product26.png" alt="TRADING PSYCHOLOGY 2.0">
+                <a href="https://drive.google.com/file/d/1uDfR5phQqvglQN-jMKJLNrM3KcPUU41R/view?usp=drive_link" class="download-button" onclick="trackDownload(5)">Download</a>
+                
+            </div>
+        </div>
+
+        <!-- Pagination Controls -->
+        <ul class="pagination">
+            <li><a href="../">1</a></li>
+            <li><a href="#">2</a></li>
+        </ul>
+    </main>
+    <footer>
+    <p>
+        <a href="../../DISCLAIMER/">Disclaimer</a> | 
+        <a href="../../TERMS/">Terms</a> | 
+        <a href="https://t.me/yourtelegramlink" target="_blank">
+            <i class="fab fa-telegram-plane"></i> Telegram
+        </a> | 
+        <a href="../../BUY ME A COFFEE/">Support Us</a>
+    </p>
+	</footer>
+    <script>
+   
+
+    // Function to search products
+    function searchProducts() {
+        let input = document.getElementById('searchInput');
+        let filter = input.value.toLowerCase();
+        let productGrid = document.getElementById('productGrid');
+        let products = productGrid.getElementsByClassName('product');
+
+        for (let i = 0; i < products.length; i++) {
+            let product = products[i];
+            let altText = product.getElementsByTagName('img')[0].alt.toLowerCase();
+            if (altText.indexOf(filter) > -1) {
+                product.style.display = '';
+            } else {
+                product.style.display = 'none';
+            }
+        }
+    }
+
+   
+    </script>
+</body>
+</html>
