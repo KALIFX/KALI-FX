@@ -282,8 +282,10 @@ footer a:hover {
         font-size: 10px;
         margin-left: 0;
     }
-
-    .disclaimer {
-        display: none; /* Hide disclaimer on mobile */
+    @media (max-width: 480px) {
+    footer, .footer, .footer p {
+        font-size: 11px;
+        padding: 10px;
     }
+   
 }
