@@ -1,17 +1,17 @@
 {
-    "lastUpdatedTime": "2025-01-16T12:00:10Z",
+    "lastUpdatedTime": "2024-08-28T12:00:10Z",
     "signals": [
         {
             "currency_pair": "GBP/USD",
-            "action": "Buy",
+            "action": "Sell",
             "entry_price": "pending",
             "stop_loss": "pending",
             "take_profit": "pending",
             "status": "pending"
         },
         {
-            "currency_pair": "GBP/JPY",
-            "action": "Buy",
+            "currency_pair": "GBP/USD",
+            "action": "Sell",
             "entry_price": "pending",
             "stop_loss": "pending",
             "take_profit": "pending",
@@ -26,7 +26,39 @@
             "status": "pending"
         },
         {
-            "currency_pair": "EUR/USD",
+            "currency_pair": "GBP/USD",
+            "action": "Sell",
+            "entry_price": "pending",
+            "stop_loss": "pending",
+            "take_profit": "pending",
+            "status": "pending"
+        },
+		{
+            "currency_pair": "GBP/USD",
+            "action": "Sell",
+            "entry_price": "pending",
+            "stop_loss": "pending",
+            "take_profit": "pending",
+            "status": "pending"
+        },
+        {
+            "currency_pair": "GBP/USD",
+            "action": "Sell",
+            "entry_price": "pending",
+            "stop_loss": "pending",
+            "take_profit": "pending",
+            "status": "pending"
+        },
+        {
+            "currency_pair": "USD/JPY",
+            "action": "Sell",
+            "entry_price": "pending",
+            "stop_loss": "pending",
+            "take_profit": "pending",
+            "status": "pending"
+        },
+        {
+            "currency_pair": "GBP/USD",
             "action": "Sell",
             "entry_price": "pending",
             "stop_loss": "pending",
