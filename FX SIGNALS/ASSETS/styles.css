@@ -20,6 +20,7 @@ body {
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid #e0e0e0;
+    overflow-x: hidden;
 }
 
 .header-left {
