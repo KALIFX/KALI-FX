@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -84,7 +85,7 @@ body {
 }
 
 .container {
-    flex: 1;
+    flex-grow: 1; /* Allow the container to take up remaining space */
     max-width: 800px;
     margin: 40px auto 20px;
     background: white;
@@ -135,6 +136,7 @@ th {
     padding: 20px;
     text-align: center;
     border-top: 2px solid #e0e0e0;
+    position: relative; /* Ensure footer is positioned correctly */
 }
 
 .footer p {
@@ -192,8 +194,6 @@ footer a:hover {
     100% { transform: translateX(-100%); } /* Scroll out to the left */
 }
 
-
-
 .up {
     color: green;
 }
@@ -205,7 +205,6 @@ footer a:hover {
 .no-change {
     color: gray;
 }
-
 
 .foot {
     text-align: center;
@@ -238,7 +237,6 @@ footer a:hover {
     opacity: 0.7;
 }
 
-/* Overlay style */
 .overlay {
     position: fixed;
     top: 0;
@@ -256,7 +254,6 @@ footer a:hover {
     text-align: center;
 }
 
-/* Close button style */
 .close-button {
     position: absolute;
     top: 20px;
@@ -276,7 +273,6 @@ footer a:hover {
 .overlay h2 {
     animation: fadeIn 1.5s ease-in-out;
 }
-
 
 @keyframes fadeIn {
     0% { opacity: 0; }
