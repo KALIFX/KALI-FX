@@ -1,7 +1,13 @@
+/* Hide disclaimer on mobile and tablet devices */
+@media screen and (max-width: 768px) {
+    .disclaimer {
+        display: none;
+    }
+}
+
 /* Mobile styles */
 @media screen and (max-width: 768px) {
     .header {
-
         padding: 5px;
     }
 
@@ -22,7 +28,7 @@
     }
 
     .menu-icon {
-        margin-left: 5;
+        margin-left: 5px;
         font-size: 20px;
     }
 
@@ -43,7 +49,7 @@
     /* Ticker adjustments */
     .ticker-container {
         font-size: 11px;
-        padding: 10px;
+        padding: 5px;
         overflow: hidden; /* Keeps ticker within bounds */
     }
 
@@ -73,7 +79,9 @@
     .overlay h2 {
         font-size: 30px;
     }
-	@media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     footer, .footer, .footer p {
         font-size: 11px;
         padding: 10px;
