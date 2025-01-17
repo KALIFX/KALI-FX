@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -8,6 +9,11 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+html {
+    overflow-x: hidden; /* Ensure no horizontal scrolling on the root */
 }
 
 .header {
@@ -19,6 +25,7 @@ body {
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid #e0e0e0;
+    box-sizing: border-box; /* Include padding and border in width */
 }
 
 .header-left {
@@ -27,11 +34,11 @@ body {
 }
 
 .logo img {
-    height: 35px; /* Adjusted size for mobile */
+    height: 35px;
 }
 
 .website-name {
-    font-size: 24px; /* Default font size for larger screens */
+    font-size: 24px;
     font-weight: bold;
     margin-left: 10px;
     color: #333;
@@ -44,9 +51,9 @@ body {
 }
 
 .menu-icon {
-    font-size: 30px; /* Adjusted size for mobile */
+    font-size: 30px;
     cursor: pointer;
-    margin-left: 15px; /* Adjusted margin */
+    margin-left: 15px;
 }
 
 .container {
@@ -58,16 +65,18 @@ body {
     max-width: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Clip any overflowing content */
 }
 
 h1 {
-    font-size: 22px; /* Adjusted size for mobile */
+    font-size: 22px;
     margin-bottom: 15px;
     text-align: center;
 }
 
 .calculator-form .form-group {
-    margin-bottom: 12px; /* Adjusted margin */
+    margin-bottom: 12px;
 }
 
 .calculator-form label {
@@ -75,17 +84,17 @@ h1 {
     margin-bottom: 4px;
     font-weight: 600;
     color: #333;
-    font-size: 13px; /* Adjusted size for mobile */
+    font-size: 13px;
 }
 
 .calculator-form input[type="number"],
 .calculator-form select {
     width: 100%;
-    padding: 10px 12px; /* Adjusted padding for mobile */
+    padding: 10px 12px;
     border: 1px solid #ddd;
     border-radius: 6px;
     box-sizing: border-box;
-    font-size: 15px; /* Adjusted size for mobile */
+    font-size: 15px;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -97,7 +106,6 @@ h1 {
 }
 
 .calculator-form select {
-    background-size: 12px;
     background-color: #fff;
     padding-right: 30px;
     cursor: pointer;
@@ -105,12 +113,12 @@ h1 {
 
 .btn {
     width: 100%;
-    padding: 8px; /* Adjusted padding for mobile */
+    padding: 8px;
     background-color: #007bff;
     border: none;
     border-radius: 4px;
     color: #fff;
-    font-size: 15px; /* Adjusted size for mobile */
+    font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -120,8 +128,8 @@ h1 {
 }
 
 .result {
-    margin-top: 15px; /* Adjusted margin */
-    font-size: 16px; /* Adjusted size for mobile */
+    margin-top: 15px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
@@ -131,6 +139,7 @@ h1 {
     padding: 20px;
     text-align: center;
     border-top: 2px solid #e0e0e0;
+    box-sizing: border-box;
 }
 
 .footer p {
@@ -141,28 +150,28 @@ h1 {
 
 footer a {
     text-decoration: none;
-    color: #666; /* Neutral link color */
-    margin: 0 10px; /* Horizontal spacing between links */
+    color: #666;
+    margin: 0 10px;
 }
 
 footer a:hover {
-    color: #00acee; /* Light blue hover color */
+    color: #00acee;
 }
 
 .fab {
-    margin-right: 5px; /* Space between icon and text */
+    margin-right: 5px;
 }
 
 .disclaimer {
-    margin-top: 15px; /* Space above the disclaimer */
-    padding: 15px; /* Inner padding for the disclaimer */
-    background-color: #f9f9f9; /* Light gray background */
-    border: 1px solid #e0e0e0; /* Subtle border */
-    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
     font-size: 14px;
-    color: #666; /* Neutral disclaimer text color */
-    text-align: center; /* Align text to the left */
-    line-height: 1.6; /* Improved line spacing */
+    color: #666;
+    text-align: center;
+    line-height: 1.6;
 }
 
 .follow-us {
@@ -175,15 +184,14 @@ footer a:hover {
 .follow-us a {
     color: black;
     text-decoration: none;
-    margin: 0 8px; /* Adjusted margin */
-    font-size: 22px; /* Adjusted size for mobile */
+    margin: 0 8px;
+    font-size: 22px;
 }
 
 .follow-us a:hover {
     opacity: 0.7;
 }
 
-/* Overlay style */
 .overlay {
     position: fixed;
     top: 0;
@@ -201,7 +209,6 @@ footer a:hover {
     text-align: center;
 }
 
-/* Close button style */
 .close-button {
     position: absolute;
     top: 20px;
@@ -222,7 +229,6 @@ footer a:hover {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -232,43 +238,45 @@ footer a:hover {
 @media only screen and (max-width: 600px) {
     .header {
         padding: 10px;
-        position: absolute; /* Keep header at the top */
-        top: 0; /* Align it to the top */
-        width: 100%; /* Ensure it spans the full width */
-        z-index: 100; /* Make sure it stays above other elements */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
     }
 
     .menu-icon {
-        margin-left: 0; /* Reset margin */
-        font-size: 28px; /* Adjusted size */
+        margin-left: 0;
+        font-size: 28px;
     }
 
     .container {
-        padding: 10px; /* Adjusted padding */
-        max-width: 80%; /* Increased width for better fit */
-        margin: 60px auto 0; /* Add top margin to avoid overlap with fixed header */
+        padding: 10px;
+        max-width: 100%;
+        margin: 60px auto 0;
     }
 
     h1 {
-        font-size: 18px; /* Further adjust size */
+        font-size: 18px;
     }
 
     .btn {
-        font-size: 14px; /* Adjusted size */
+        font-size: 14px;
     }
 
     .footer {
-        padding: 10px; /* Adjusted padding */
+        padding: 10px;
     }
 
     .footer p {
-        font-size: 12px; /* Further adjust size */
-    }	
-	
-}
-@media only screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+
     .website-name {
-        font-size: 10px; /* Smaller size for mobile */
-        margin-left: 0; /* Adjust the margin if necessary */
+        font-size: 10px;
+        margin-left: 0;
+    }
+
+    .disclaimer {
+        display: none; /* Hide disclaimer on mobile */
     }
 }
