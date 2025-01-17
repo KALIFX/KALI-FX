@@ -16,6 +16,7 @@ html {
     overflow-x: hidden; /* Ensure no horizontal scrolling on the root */
 }
 
+/* Header Styles */
 .header {
     width: 100%;
     background-color: #fff;
@@ -56,6 +57,7 @@ html {
     margin-left: 15px;
 }
 
+/* Container Styles */
 .container {
     background-color: #fff;
     padding: 20px;
@@ -134,12 +136,15 @@ h1 {
     text-align: center;
 }
 
+/* Footer Styles */
 .footer {
+    width: 100%; /* Ensure full width matches the header */
     background-color: #f8f9fa;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
     border-top: 2px solid #e0e0e0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding and border in width */
+    position: relative; /* Ensure footer is positioned correctly */
 }
 
 .footer p {
@@ -150,18 +155,19 @@ h1 {
 
 footer a {
     text-decoration: none;
-    color: #666;
-    margin: 0 10px;
+    color: #666; /* Neutral link color */
+    margin: 0 10px; /* Horizontal spacing between links */
 }
 
 footer a:hover {
-    color: #00acee;
+    color: #00acee; /* Light blue hover color */
 }
 
 .fab {
-    margin-right: 5px;
+    margin-right: 5px; /* Space between icon and text */
 }
 
+/* Disclaimer Section */
 .disclaimer {
     margin-top: 15px;
     padding: 15px;
@@ -174,6 +180,7 @@ footer a:hover {
     line-height: 1.6;
 }
 
+/* Follow Us Section */
 .follow-us {
     display: flex;
     justify-content: center;
@@ -192,6 +199,7 @@ footer a:hover {
     opacity: 0.7;
 }
 
+/* Overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -236,15 +244,16 @@ footer a:hover {
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
-     .header {
+    .header {
         padding: 10px;
         position: fixed;
         top: 0;
-        left: 0; /* Added to ensure full-width positioning */
-        right: 0; /* Added to ensure full-width positioning */
+        left: 0;
+        right: 0; /* Ensure full-width positioning */
         width: 100%;
         z-index: 100;
     }
+
     .menu-icon {
         margin-left: 0;
         font-size: 28px;
@@ -265,11 +274,8 @@ footer a:hover {
     }
 
     .footer {
-        padding: 10px;
-    }
-
-    .footer p {
-        font-size: 12px;
+        padding: 10px; /* Match the header's padding */
+        font-size: 11px;
     }
 
     .website-name {
