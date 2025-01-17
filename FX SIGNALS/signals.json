@@ -24,46 +24,7 @@
             "stop_loss": "pending",
             "take_profit": "pending",
             "status": "pending"
-        },
-        {
-            "currency_pair": "GBP/USD",
-            "action": "Sell",
-            "entry_price": "pending",
-            "stop_loss": "pending",
-            "take_profit": "pending",
-            "status": "pending"
-        },
-		{
-            "currency_pair": "GBP/USD",
-            "action": "Sell",
-            "entry_price": "pending",
-            "stop_loss": "pending",
-            "take_profit": "pending",
-            "status": "pending"
-        },
-        {
-            "currency_pair": "GBP/USD",
-            "action": "Sell",
-            "entry_price": "pending",
-            "stop_loss": "pending",
-            "take_profit": "pending",
-            "status": "pending"
-        },
-        {
-            "currency_pair": "USD/JPY",
-            "action": "Sell",
-            "entry_price": "pending",
-            "stop_loss": "pending",
-            "take_profit": "pending",
-            "status": "pending"
-        },
-        {
-            "currency_pair": "GBP/USD",
-            "action": "Sell",
-            "entry_price": "pending",
-            "stop_loss": "pending",
-            "take_profit": "pending",
-            "status": "pending"
         }
+       
     ]
 }
