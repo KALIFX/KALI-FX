@@ -1,9 +1,9 @@
 {
-    "lastUpdatedTime": "2025-01-16T12:00:10Z",
+    "lastUpdatedTime": "2025-01-17T10:00:10Z",
     "signals": [
         {
             "currency_pair": "EUR/USD",
-            "action": "Sell",
+            "action": "Buy",
             "entry_price": "pending",
             "stop_loss": "pending",
             "take_profit": "pending",
