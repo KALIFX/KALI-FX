@@ -236,14 +236,15 @@ footer a:hover {
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
-    .header {
+     .header {
         padding: 10px;
         position: fixed;
         top: 0;
+        left: 0; /* Added to ensure full-width positioning */
+        right: 0; /* Added to ensure full-width positioning */
         width: 100%;
         z-index: 100;
     }
-
     .menu-icon {
         margin-left: 0;
         font-size: 28px;
