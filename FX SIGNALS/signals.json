@@ -1,5 +1,5 @@
 {
-    "lastUpdatedTime": "2025-01-17T14:00:10Z",
+    "lastUpdatedTime": "2025-01-16T12:00:10Z",
     "signals": [
         {
             "currency_pair": "GBP/USD",
@@ -27,7 +27,7 @@
         },
         {
             "currency_pair": "EUR/USD",
-            "action": "Buy",
+            "action": "Sell",
             "entry_price": "pending",
             "stop_loss": "pending",
             "take_profit": "pending",
