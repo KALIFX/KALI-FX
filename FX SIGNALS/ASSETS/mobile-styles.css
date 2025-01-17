@@ -1,10 +1,3 @@
-/* Hide disclaimer on mobile and tablet devices */
-@media screen and (max-width: 768px) {
-    .disclaimer {
-        display: none;
-    }
-}
-
 /* Mobile styles */
 @media screen and (max-width: 768px) {
     .header {
@@ -49,7 +42,7 @@
     /* Ticker adjustments */
     .ticker-container {
         font-size: 11px;
-        padding: 5px;
+        padding: 10px;
         overflow: hidden; /* Keeps ticker within bounds */
     }
 
