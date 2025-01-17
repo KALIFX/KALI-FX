@@ -3,6 +3,7 @@
     .header {
 
         padding: 5px;
+	overflow-x: hidden;
     }
 
     .logo img {
