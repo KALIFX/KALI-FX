@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCHASTIC SCALPING</title>
+	<link rel="icon" href="../../../../IMAGES/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+			background-image: url('../../../../IMAGES/header-background.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding: 4em 0;
+			position: relative; /* Make the header a positioned element */
+			display: flex;
+			align-items: center; /* Vertically center the items */
+			gap: 1em; /* Optional: space between items */
+			height: 0px; /* Set the desired height */
+		}
+				
+		.logo img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+		}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero-image {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			aspect-ratio: 16 / 7; /* This maintains the aspect ratio */
+			background: url('../product9.png') center center / cover no-repeat;
+			margin: 20px auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		/* Media query for smaller screens */
+		@media (max-width: 600px) {
+			.hero-image {
+				width: 90%; /* Adjust the width for smaller screens */
+				margin: 10px auto;
+			}
+		}
+        main {
+            padding: 2em;
+            text-align: left;
+        }
+        .centered-title {
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .download-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button a:hover {
+            background-color: #45a049;
+        }
+		/* Mobile devices */
+		@media (max-width: 480px) {
+			header {
+				padding: 1em 0; /* Further reduce padding on smaller screens */
+			}
+
+			.logo img {
+				max-width: 40%; /* Further reduce logo size for very small screens */
+				max-height: 40%; /* Further reduce logo size for very small screens */
+			}
+		   
+			nav {
+			padding: 0; /* Further reduce padding on very small screens */
+			}
+
+			nav ul {
+				display: flex; /* Use flexbox for layout */
+				flex-direction: row; /* Align items horizontally */
+				justify-content: center; /* Center items within the navigation */
+				align-items: center; /* Align items vertically in the center */
+				padding: 0; /* Remove any default padding */
+				margin: 0; /* Remove any default margin */
+				list-style: none; /* Remove bullet points */
+			}
+
+			nav ul li {
+				margin: 0 0.5em; /* Space out menu items horizontally */
+			}
+
+			nav ul li a {
+				padding: 0.8em; /* Adjust padding */
+				font-size: 0.9em; /* Adjust font size for smaller screens */
+				text-decoration: none; /* Remove underline from links */
+			}
+			
+		}	
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../../">
+            <img src="../../../../IMAGES/logo.png" alt="Logo" />
+			</a>
+        </div>		
+    </header>
+	<nav>
+        <ul>
+            <li><a href="../../../../"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../../../../EBOOKS/">EBOOKS</a>
+                    <a href="../../../../FX SYSTEMS/MT4/">MT4 SYSTEMS</a>
+					<a href="../../../../FX SYSTEMS/MT5/">MT5 SYSTEMS</a>
+					<a href="../../../../MISCELLANEOUS/">MISC TOOLS</a>
+					<a href="../../../../VIDEO TUTORIALS/">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered-title">STOCHASTIC SCALPING</h2>
+        <div class="hero-image"></div>
+        <div class="product-grid">
+            <div class="product">
+                <h3>STOCHASTIC SCALPING</h3>
+                <p><strong>Trading Instructions</strong></p>
+                <p><strong>Buy Conditions</strong></p>
+                <ol>
+                    <li><strong>Pullback to Moving Average:</strong>
+                        <ul>
+                            <li>Wait for the price to pull back and touch one of the moving averages (MA).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Green Dot Confirmation:</strong>
+                        <ul>
+                            <li>Ensure a green dot appears, indicating a potential buy signal.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Stochastic Oscillator:</strong>
+                                             <ul>
+                            <li>The stochastic oscillator should be in the oversold region.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Candle Close:</strong>
+                        <ul>
+                            <li>Open a buy position at the close of the candle following the appearance of the green dot.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p><strong>Sell Conditions</strong></p>
+                <ol>
+                    <li><strong>Pullback to Moving Average:</strong>
+                        <ul>
+                            <li>Wait for the price to pull back and touch one of the moving averages (MA).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Red Dot Confirmation:</strong>
+                        <ul>
+                            <li>Ensure a red dot appears, indicating a potential sell signal.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Stochastic Oscillator:</strong>
+                        <ul>
+                            <li>The stochastic oscillator should be in the overbought region.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Candle Close:</strong>
+                        <ul>
+                            <li>Open a sell position at the close of the candle following the appearance of the red dot.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p><strong>Note:</strong> All these conditions must be met before opening either a buy or sell position.</p>
+                <div class="download-button">
+                    <a href="https://drive.google.com/file/d/1ERNidN9mYPYBexUyxWyrpN_LsNAiGnd6/view?usp=drive_link" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
