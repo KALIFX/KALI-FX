@@ -3,7 +3,7 @@
     "signals": [
         {
             "currency_pair": "GBP/USD",
-            "action": "Sell",
+            "action": "Buy",
             "entry_price": "pending",
             "stop_loss": "pending",
             "take_profit": "pending",
@@ -20,6 +20,14 @@
         {
             "currency_pair": "USD/JPY",
             "action": "Sell",
+            "entry_price": "pending",
+            "stop_loss": "pending",
+            "take_profit": "pending",
+            "status": "pending"
+        },
+        {
+            "currency_pair": "USD/JPY",
+            "action": "Buy",
             "entry_price": "pending",
             "stop_loss": "pending",
             "take_profit": "pending",
