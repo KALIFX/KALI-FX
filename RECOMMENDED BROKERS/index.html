@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOMMENDED BROKERS</title>
+    <link rel="icon" href="../IMAGES/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+    /* General styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header styling */
+    header {
+        background-image: url('../IMAGES/header-background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 4em 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        height: 0px;
+    }
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Navigation styling */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+        position: relative;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 1em;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        color: #ffcc00;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 120px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #575757;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .broker-images {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Space between the images */
+        margin: 20px auto; /* Center the group of images */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+    .broker-image {
+        width: 100px; /* Set the width for the images */
+        height: 100px; /* Set the height for the images */
+        border-radius: 50%; /* Make the images round */
+        object-fit: cover; /* Ensure the image covers the element */
+        border: 2px solid #ddd; /* Optional: add a border */
+        transition: transform 0.3s; /* Smooth scale effect */
+    }
+
+    .broker-image:hover {
+        transform: scale(1.05); /* Scale effect on hover */
+    }
+
+    /* Main content styling */
+    main {
+        padding: 2em;
+        text-align: left;
+    }
+
+    .centered-title {
+        text-align: center;
+    }
+
+    .centered-title {
+        text-align: center;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .product {
+        border: 1px solid #ddd;
+        padding: 1em;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .download-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .download-button a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .download-button a:hover {
+        background-color: #45a049;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 600px) {
+        .broker-images {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .broker-image {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    /* Additional media query for very small screens */
+    @media (max-width: 480px) {
+        header {
+            padding: 1em 0;
+        }
+
+        .logo img {
+            max-width: 40%;
+            height: auto;
+        }
+
+        nav ul {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 0.5em;
+        }
+
+        nav ul li a {
+            padding: 0.8em;
+            font-size: 0.9em;
+            text-decoration: none;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../">
+                <img src="../IMAGES/logo.png" alt="Logo">
+            </a>
+        </div>    
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fas fa-bars"></i> Free Stuff</a>
+                <div class="dropdown-content">
+                    <a href="../EBOOKS/">EBOOKS</a>
+                    <a href="../FX SYSTEMS/MT4/">MT4 SYSTEMS</a>
+                    <a href="../FX SYSTEMS/MT5/">MT5 SYSTEMS</a>
+                    <a href="../MISCELLANEOUS/">MISC TOOLS</a>
+                    <a href="../VIDEO TUTORIALS/">VIDEO TUTORIALS</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+	 <h2 class="centered-title">RECOMMENDED BROKERS FOR EA TRADING</h2>
+        <div class="broker-images">
+			<a href="https://www.icmarkets.com/global/en/"><img src="IC.png" alt="EXNESS" class="broker-image"></a>
+			<a href="https://pepperstone.com/en-au/"><img src="PERPPERSTONE.png" alt="PERPPERSTONE" class="broker-image"></a>
+			<a href="https://www.tickmill.com/"><img src="TICKMILL.png" alt="TICKMILL" class="broker-image"></a>
+			<a href="https://www.exness.com/"><img src="EXNESS.jpg" alt="EXNESS" class="broker-image"></a>
+			<a href="https://roboforex.com/"><img src="ROBOFOREX.jpg" alt="ROBOFOREX" class="broker-image"></a>
+		</div>
+        <div class="product-grid">
+            <div class="product">
+                <p>Here are five recommended brokers with low spreads, fast execution, and ideal conditions for EA trading:</p>
+                <ol>
+    <li><strong>IC Markets</strong>
+        <ul>
+            <li><strong>Type:</strong> ECN Broker</li>
+            <li><strong>Spread:</strong> 
+                <ul>
+                    <li>Raw Spread accounts: From 0.0 pips</li>
+                    <li>Standard accounts: From 1.0 pips</li>
+                </ul>
+            </li>
+            <li><strong>Minimum Deposit:</strong> $200 for all account types</li>
+            <li><strong>Features:</strong> No restrictions on EAs, fast execution, low latency</li>
+            <li><strong>Regulation:</strong> ASIC, CySEC, FSA</li>
+        </ul>
+    </li>
+    <li><strong>Pepperstone</strong>
+        <ul>
+            <li><strong>Type:</strong> ECN/STP Broker</li>
+            <li><strong>Spread:</strong>
+                <ul>
+                    <li>Razor accounts: From 0.0 pips</li>
+                    <li>Standard accounts: From 1.0 pips</li>
+                </ul>
+            </li>
+            <li><strong>Minimum Deposit:</strong> $200 for all account types</li>
+            <li><strong>Features:</strong> Tight spreads, VPS hosting options, ultra-low commissions</li>
+            <li><strong>Regulation:</strong> ASIC, FCA, CySEC</li>
+        </ul>
+    </li>
+    <li><strong>Tickmill</strong>
+        <ul>
+            <li><strong>Type:</strong> ECN/STP Broker</li>
+            <li><strong>Spread:</strong>
+                <ul>
+                    <li>Pro accounts: From 0.0 pips</li>
+                    <li>Standard accounts: From 1.2 pips</li>
+                </ul>
+            </li>
+            <li><strong>Minimum Deposit:</strong> $100 for all account types</li>
+            <li><strong>Features:</strong> High compatibility with MT4/MT5 EAs, low trading costs</li>
+            <li><strong>Regulation:</strong> FCA, CySEC, FSCA</li>
+        </ul>
+    </li>
+    <li><strong>Exness</strong>
+        <ul>
+            <li><strong>Type:</strong> Market Maker/ECN</li>
+            <li><strong>Spread:</strong>
+                <ul>
+                    <li>Raw Spread accounts: From 0.0 pips</li>
+                    <li>Standard accounts: From 1.0 pips</li>
+                </ul>
+            </li>
+            <li><strong>Minimum Deposit:</strong> No minimum deposit for Standard accounts; $500 for Raw Spread accounts</li>
+            <li><strong>Features:</strong> Unlimited leverage, quick withdrawals, free VPS hosting</li>
+            <li><strong>Regulation:</strong> FCA, CySEC, FSCA</li>
+        </ul>
+    </li>
+    <li><strong>RoboForex</strong>
+        <ul>
+            <li><strong>Type:</strong> ECN/STP Broker</li>
+            <li><strong>Spread:</strong>
+                <ul>
+                    <li>ECN accounts: From 0.0 pips</li>
+                    <li>Standard accounts: From 1.3 pips</li>
+                </ul>
+            </li>
+            <li><strong>Minimum Deposit:</strong> $10 for Standard accounts; $100 for ECN accounts</li>
+            <li><strong>Features:</strong> Free VPS, wide range of tools, MT4/MT5 compatibility</li>
+            <li><strong>Regulation:</strong> IFSC</li>
+        </ul>
+    </li>
+</ol>
+
+                <p>When selecting a broker, prioritize low spreads, fast execution, reliable VPS hosting, and proper regulation to ensure optimal EA performance.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
