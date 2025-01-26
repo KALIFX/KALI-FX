@@ -1,0 +1,96 @@
+{
+    "conversion_rates": {
+        "EUR/USD": {
+            "rate": 1.0489877268435959,
+            "indicator": "\u2191"
+        },
+        "USD/JPY": {
+            "rate": 155.9679,
+            "indicator": "\u2193"
+        },
+        "GBP/USD": {
+            "rate": 1.2448649321548613,
+            "indicator": "\u2191"
+        },
+        "USD/CHF": {
+            "rate": 0.9056,
+            "indicator": "\u2193"
+        },
+        "AUD/USD": {
+            "rate": 0.6312732782021336,
+            "indicator": "\u2191"
+        },
+        "USD/CAD": {
+            "rate": 1.4337,
+            "indicator": "\u2191"
+        },
+        "NZD/USD": {
+            "rate": 0.5709391949757351,
+            "indicator": "\u2191"
+        },
+        "USD/ZAR": {
+            "rate": 18.3797,
+            "indicator": "\u2193"
+        },
+        "EUR/AUD": {
+            "rate": 1.6617014580929403,
+            "indicator": "\u2191"
+        },
+        "EUR/JPY": {
+            "rate": 163.60841288156925,
+            "indicator": "\u2191"
+        },
+        "GBP/CHF": {
+            "rate": 1.1273496825594422,
+            "indicator": "\u2191"
+        },
+        "GBP/CAD": {
+            "rate": 1.7847628532304245,
+            "indicator": "\u2191"
+        },
+        "GBP/AUD": {
+            "rate": 1.9719905390265158,
+            "indicator": "\u2191"
+        },
+        "AUD/JPY": {
+            "rate": 98.45836752730256,
+            "indicator": "\u2191"
+        },
+        "AUD/CAD": {
+            "rate": 0.905056498958399,
+            "indicator": "\u2191"
+        },
+        "AUD/CHF": {
+            "rate": 0.5716810807398522,
+            "indicator": "\u2191"
+        },
+        "NZD/CHF": {
+            "rate": 0.5170425349700256,
+            "indicator": "\u2191"
+        },
+        "NZD/CAD": {
+            "rate": 0.8185555238367114,
+            "indicator": "\u2191"
+        },
+        "EUR/CAD": {
+            "rate": 1.5039337039756635,
+            "indicator": "\u2191"
+        },
+        "GBP/JPY": {
+            "rate": 194.15896925183617,
+            "indicator": "\u2191"
+        },
+        "CHF/JPY": {
+            "rate": 172.22603798586573,
+            "indicator": "\u2191"
+        },
+        "EUR/NZD": {
+            "rate": 1.8373020035665582,
+            "indicator": "\u2191"
+        },
+        "CAD/CHF": {
+            "rate": 0.631652367998884,
+            "indicator": "\u2193"
+        }
+    }
+}
